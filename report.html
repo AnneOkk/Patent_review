@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Anne-Kathrin Kleine, Eva Lermer, Julia Cecil, Anna Heinrich &amp; Susanne Gaube">
+<meta name="keywords" content="precision psychiatry, patent review, artificial intelligence, mental health">
+
+<title>Advancing Mental Health Care with AI-Enabled Precision Psychiatry Tools: A Patent Review</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_files/libs/quarto-html/quarto.js"></script>
+<script src="report_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="report_files/libs/htmlwidgets-1.6.0/htmlwidgets.js"></script>
+<script src="report_files/libs/viz-1.8.2/viz.js"></script>
+<link href="report_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="report_files/libs/grViz-binding-1.0.9/grViz.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#materials-and-methods" id="toc-materials-and-methods" class="nav-link" data-scroll-target="#materials-and-methods">Materials and methods</a>
+  <ul>
+  <li><a href="#database-search" id="toc-database-search" class="nav-link" data-scroll-target="#database-search">Database search</a></li>
+  <li><a href="#patent-coding-and-inclusion-criteria" id="toc-patent-coding-and-inclusion-criteria" class="nav-link" data-scroll-target="#patent-coding-and-inclusion-criteria">Patent coding and inclusion criteria</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul>
+  <li><a href="#descriptive-information" id="toc-descriptive-information" class="nav-link" data-scroll-target="#descriptive-information">Descriptive information</a></li>
+  <li><a href="#technology-convergence-based-on-cpc-codes" id="toc-technology-convergence-based-on-cpc-codes" class="nav-link" data-scroll-target="#technology-convergence-based-on-cpc-codes">Technology convergence based on CPC codes</a></li>
+  <li><a href="#topic-modeling-based-on-claims" id="toc-topic-modeling-based-on-claims" class="nav-link" data-scroll-target="#topic-modeling-based-on-claims">Topic modeling based on claims</a></li>
+  <li><a href="#characteristics-of-the-most-impactful-patent-per-year" id="toc-characteristics-of-the-most-impactful-patent-per-year" class="nav-link" data-scroll-target="#characteristics-of-the-most-impactful-patent-per-year">Characteristics of the most impactful patent per year</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Advancing Mental Health Care with AI-Enabled Precision Psychiatry Tools: A Patent Review</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anne-Kathrin Kleine, Eva Lermer, Julia Cecil, Anna Heinrich &amp; Susanne Gaube </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+<p>The review provides an overview of patents on AI-enabled precision psychiatry tools published between 2015 and mid-October 2022. Multiple analytic approaches, such as graphic network analysis and topic modeling, are used to analyze the scope, content, and trends of the retained patents. The included tools aim to provide accurate diagnoses according to established psychometric criteria, predict the response to specific treatment approaches, suggest optimal treatments, and make prognoses regarding disorder courses without intervention. About one-third of the tools recommend treatment options or include treatment administration related to digital therapeutics, pharmacotherapy, and electrotherapy. Data sources used to make predictions include behavioral data collected through mobile devices, neuroimaging, and electronic health records. The complexity of technology combinations used in the included devices has increased until 2021. The topics extracted from the patent data illuminate current trends and potential future developments in AI-enabled precision psychiatry. The most impactful patents and associated available products reveal relevant commercialization possibilities and likely future developments. Overall, the review highlights the potential of adopting AI-enabled precision psychiatry tools in practice.</p>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>The lack of understanding of the pathophysiology of mental disorders contributes to the difficulty of treating them. Symptoms can be shared between multiple disorders, and the intensity or presence of these symptoms can differ dramatically between people that fall within the same diagnostic category <span class="citation" data-cites="fernandes_etal17 kendler16 newson_etal20">(<a href="#ref-fernandes_etal17" role="doc-biblioref">Fernandes et al., 2017</a>; <a href="#ref-kendler16" role="doc-biblioref">Kendler, 2016</a>; <a href="#ref-newson_etal20" role="doc-biblioref">Newson et al., 2020</a>)</span>. As a result, people with mental health issues may go through months or even years of treatment before receiving the right medication or suitable psychotherapy <span class="citation" data-cites="bzdok_meyer-lindenberg18">(<a href="#ref-bzdok_meyer-lindenberg18" role="doc-biblioref">Bzdok &amp; Meyer-Lindenberg, 2018</a>)</span>. These changes in treatment plans or ineffective treatment can have a negative effect on the patient’s quality of life and can lead to high healthcare costs <span class="citation" data-cites="zanardi_etal21">(<a href="#ref-zanardi_etal21" role="doc-biblioref">Zanardi et al., 2021</a>)</span>.</p>
+<p>Precision psychiatry may offer remedies against the prevalent trial-and-error approach in mental healthcare. Similar to precision medicine, precision psychiatry considers individual variability in biological, environmental, and lifestyle factors to make appropriate treatment recommendations <span class="citation" data-cites="fernandes_etal17 salazardepablo_etal21">(<a href="#ref-fernandes_etal17" role="doc-biblioref">Fernandes et al., 2017</a>; <a href="#ref-salazardepablo_etal21" role="doc-biblioref">Salazar de Pablo et al., 2021</a>)</span>. Rather than concentrating on creating new treatments that are successful for most patients, precision psychiatry focuses on the exact choice of an effective treatment for one patient or a small group of patients <span class="citation" data-cites="rush_etal06 bzdok_meyer-lindenberg18 fernandes_etal17">(<a href="#ref-bzdok_meyer-lindenberg18" role="doc-biblioref">Bzdok &amp; Meyer-Lindenberg, 2018</a>; <a href="#ref-fernandes_etal17" role="doc-biblioref">Fernandes et al., 2017</a>; <a href="#ref-rush_etal06" role="doc-biblioref">Rush et al., 2006</a>)</span>. For example, a particular antidepressant may be more effective in one patient than another, even if both suffer from major depressive disorder <span class="citation" data-cites="chekroud_etal16">(<a href="#ref-chekroud_etal16" role="doc-biblioref">Chekroud et al., 2016</a>)</span>, and certain psychotherapeutic treatment strategies may be more or less effective for different patients <span class="citation" data-cites="lutz_etal22">(<a href="#ref-lutz_etal22" role="doc-biblioref">Lutz et al., 2022</a>)</span>. Precision psychiatry utilizes data from multiple sources (e.g., brain imaging, health records, demographic data, or self-reported experience) to gain an understanding of complex illness mechanisms and provide effective treatment options <span class="citation" data-cites="fernandes_etal17 salazardepablo_etal21">(<a href="#ref-fernandes_etal17" role="doc-biblioref">Fernandes et al., 2017</a>; <a href="#ref-salazardepablo_etal21" role="doc-biblioref">Salazar de Pablo et al., 2021</a>)</span>. Precision psychiatry is a tool that can be used to identify mental conditions (diagnostic approach), anticipate the potential onset of a condition in the future (prognostic approach), and forecast the response to a treatment plan (treatment prediction approach) at the individual level <span class="citation" data-cites="salazardepablo_etal21 lin_etal20e">(<a href="#ref-lin_etal20e" role="doc-biblioref">Lin et al., 2020</a>; <a href="#ref-salazardepablo_etal21" role="doc-biblioref">Salazar de Pablo et al., 2021</a>)</span>.</p>
+<p>Artificial Intelligence (AI) through Machine Learning (ML) can be particularly effective in deriving predictions at the individual level <span class="citation" data-cites="bzdok_meyer-lindenberg18">(<a href="#ref-bzdok_meyer-lindenberg18" role="doc-biblioref">Bzdok &amp; Meyer-Lindenberg, 2018</a>)</span>. ML algorithms can be used to identify intricate patterns in observational data to accurately make quantitative (e.g., symptom severity) and categorical (e.g., disorder subgroups) predictions in clinical settings. This typically involves a three-step procedure: a) training the algorithm on a data set, b) refining it until its predictions are satisfactory, and c) utilizing the gleaned insights to make predictions for new data or future events <span class="citation" data-cites="bzdok_meyer-lindenberg18 dwyer_etal18">(<a href="#ref-bzdok_meyer-lindenberg18" role="doc-biblioref">Bzdok &amp; Meyer-Lindenberg, 2018</a>; <a href="#ref-dwyer_etal18" role="doc-biblioref">Dwyer et al., 2018</a>)</span>. In recent years, researchers have been dedicating significant attention to the development of highly accurate ML-generated predictions in precision psychiatry. For example, <span class="citation" data-cites="yahata_etal16">Yahata et al. (<a href="#ref-yahata_etal16" role="doc-biblioref">2016</a>)</span> identified a small number of functional connections from brain imaging data that can differentiate typically developed people from those with autism, with their model achieving an 85% accuracy rate when tested on an independent sample. Similarly, <span class="citation" data-cites="drysdale_etal17">Drysdale et al. (<a href="#ref-drysdale_etal17" role="doc-biblioref">2017</a>)</span> used functional images from patients with mental illness to cluster them into four neurophysiological depression subtypes, which were determined by distinct patterns of dysfunctional connectivity in neural networks. Their classification model achieved an 86% accuracy. Additionally, the authors demonstrated that the identified subtypes were linked to different clinical symptoms and different levels of responsiveness to electrotherapy.</p>
+<p>Despite this, the use of AI in mental healthcare remains in its infancy. Until 2020, only two AI-enabled applications have been approved by the US Food and Drug Administration (FDA) for use in psychiatry <span class="citation" data-cites="benjamens_etal20">(<a href="#ref-benjamens_etal20" role="doc-biblioref">Benjamens et al., 2020</a>)</span>. Nonetheless, the global market for mental health software is anticipated to rise remarkably until 2027. The major factors contributing to this growth include increasing incidences of mental health conditions and technological advancements <span class="citation" data-cites="researchandmarkets22a">(<a href="#ref-researchandmarkets22a" role="doc-biblioref">Markets, 2022</a>)</span>. These predicted market developments demonstrate the future potential of AI-based precision psychiatry technologies. Patents can provide up to 80% of the latest technological information about a particular area that scientific evidence alone cannot uncover <span class="citation" data-cites="caviggioli16 curran_etal10">(<a href="#ref-caviggioli16" role="doc-biblioref">Caviggioli, 2016</a>; <a href="#ref-curran_etal10" role="doc-biblioref">Curran et al., 2010</a>)</span>. In addition, patent information can be used to anticipate the application of technology in the next five to ten years <span class="citation" data-cites="zha_chen10 trappey_etal11 erzurumlu_pachamanova20">(<a href="#ref-erzurumlu_pachamanova20" role="doc-biblioref">Erzurumlu &amp; Pachamanova, 2020</a>; <a href="#ref-trappey_etal11" role="doc-biblioref">Trappey et al., 2011</a>; <a href="#ref-zha_chen10" role="doc-biblioref">Zha &amp; Chen, 2010</a>)</span>. Patents represent the result of a company’s investment of time and resources in research and development (R&amp;D) and the transfer of intellectual assets from academic institutions. After the patenting phase, technologies can be licensed and sold commercially <span class="citation" data-cites="harryson08 kamariah_etal11 szulczewska-remi_nowak-mizgalska21">(<a href="#ref-harryson08" role="doc-biblioref">Harryson, 2008</a>; <a href="#ref-kamariah_etal11" role="doc-biblioref">Kamariah et al., 2011</a>; <a href="#ref-szulczewska-remi_nowak-mizgalska21" role="doc-biblioref">Szulczewska-Remi &amp; Nowak-Mizgalska, 2021</a>)</span>. The existing evidence on the benefits of AI for precision psychiatry does not consider factors relevant for market adoption <span class="citation" data-cites="bzdok_meyer-lindenberg18 passos_etal22 salazardepablo_etal21 zanardi_etal21">(e.g., <a href="#ref-bzdok_meyer-lindenberg18" role="doc-biblioref">Bzdok &amp; Meyer-Lindenberg, 2018</a>; <a href="#ref-passos_etal22" role="doc-biblioref">Passos et al., 2022</a>; <a href="#ref-salazardepablo_etal21" role="doc-biblioref">Salazar de Pablo et al., 2021</a>; <a href="#ref-zanardi_etal21" role="doc-biblioref">Zanardi et al., 2021</a>)</span>. Accordingly, there is a considerable knowledge gap regarding the scope of technologies that do not remain as research projects at universities and knowledge institutions but enter the commercialization process. Since many researched ideas and technologies will never be commercialized, patents are an essential alternative source of knowledge on technological progress <span class="citation" data-cites="yoon_etal17">(<a href="#ref-yoon_etal17" role="doc-biblioref">Yoon et al., 2017</a>)</span>.</p>
+<p>The current patent analysis sheds light on the content, scope, and recent developments in AI-enabled precision psychiatry technologies. First, we present descriptive information on the targeted disorders, the type of prediction modeling applied (i.e., diagnostic, treatment prediction, prognostic approach), treatment recommendations, the data sources provided in the patent titles, abstracts, claims<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and descriptions, and information on the regional distribution of patents. Second, we examine Cooperative Patent Classification (CPC) code trends to identify emerging technology combinations. CPC codes contain details on core invention contents and technical elements. More than one CPC code can be assigned to one patent, and combining two or more CPC codes indicates technology convergence. Technology convergence is associated with opportunities for economic growth and innovation but also with threats of facing competitors in fields outside the own expert domain. Technology convergence analysis facilitates a precise understanding of the evolution of new technologies, the increasing complexity of inventions, and associated strategies for dealing with opportunities and threats <span class="citation" data-cites="kim_kim12">(<a href="#ref-kim_kim12" role="doc-biblioref">Kim &amp; Kim, 2012</a>)</span>. Third, we apply topic modeling to the patents’ claims to gain insight into the patents’ content, scope, and mechanisms of technology convergence beyond the information contained in patent metadata, such as CPC codes <span class="citation" data-cites="choi_song18">(<a href="#ref-choi_song18" role="doc-biblioref">Choi &amp; Song, 2018</a>)</span>. Finally, we present information on the most impactful patents per year, including commercialization efforts.</p>
+<p>One of the major obstacles to adopting AI-enabled tools in mental healthcare is the lack of awareness of the products available and a poor understanding of their operating mechanisms <span class="citation" data-cites="aafjes-vandoorn_etal21 chekroud_etal21">(<a href="#ref-aafjes-vandoorn_etal21" role="doc-biblioref">Aafjes-van Doorn et al., 2021</a>; <a href="#ref-chekroud_etal21" role="doc-biblioref">Chekroud et al., 2021</a>)</span>. The insight gained through the patent review can raise awareness of technologies that will likely enter the market in the coming years. It should support mental health practitioners, healthcare providers, and training centers to understand the scope, focus, and functionality of AI-enabled precision psychiatry tools and to develop strategies to facilitate their adoption. In addition, information on the commercial viability and predicted future developments of patents may be valuable for calibrating research efforts in R&amp;D centers <span class="citation" data-cites="baglieri_cesaroni13 erzurumlu_pachamanova20">(<a href="#ref-baglieri_cesaroni13" role="doc-biblioref">Baglieri &amp; Cesaroni, 2013</a>; <a href="#ref-erzurumlu_pachamanova20" role="doc-biblioref">Erzurumlu &amp; Pachamanova, 2020</a>)</span>.</p>
+</section>
+<section id="materials-and-methods" class="level1">
+<h1>Materials and methods</h1>
+<section id="database-search" class="level2">
+<h2 class="anchored" data-anchor-id="database-search">Database search</h2>
+<p>We conducted a patent search using the Derwent Innovation (DI) database and its smart search function. The smart search function semantically analyzes word strings and automatically expands the keywords to include other related relevant terms. We searched for patents related to precision psychiatry <span class="citation" data-cites="salazardepablo_etal21">(<a href="#ref-salazardepablo_etal21" role="doc-biblioref">Salazar de Pablo et al., 2021</a>)</span>, artificial intelligence, and mental disorders. Specifically, our search terms were (“risk prediction” OR predictive OR prognostic OR diagnostic) AND (“artificial intelligence” OR “machine learning”) AND (psychiatrist OR psychotherapist OR “mental health” OR “mental illness”). The search was limited to patents published between January 1st 2015 and October 20th 2022.</p>
+<p>A search using the Derwent World Patents Index (DWPI) yielded 19,399 patent families. To limit the results to patents related to mental health, a follow-up search was conducted which included keywords related to mental disorders as defined in the Diagnostic and Statistical Manual of Mental Disorders 5th Edition – Text Revision (DSM-V-TR) manual <span class="citation" data-cites="Diagnostic22">(<a href="#ref-Diagnostic22" role="doc-biblioref"><em>Diagnostic and Statistical Manual of Mental Disorders</em>, 2022</a>)</span> in the patent title or abstract. The complete search term is displayed in the Online Appendix (https://osf.io/gzy9r/?view_only=e0ee985e9b874cff8b85674bec8be8f6). This search yielded 703 relevant DWPI patent families (henceforth called “patents”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>).</p>
+</section>
+<section id="patent-coding-and-inclusion-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="patent-coding-and-inclusion-criteria">Patent coding and inclusion criteria</h2>
+<p>The present study was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses <span class="citation" data-cites="moher_etal09">(PRISMA, <a href="#ref-moher_etal09" role="doc-biblioref">Moher et al., 2009</a>)</span>. A PRISMA flow diagram of the is presented in the Online Appendix (Fig. A). The titles, abstracts, and claims of all patents were investigated to identify those that satisfied the inclusion criteria. AK, JC, and AH further characterized the patents according to the targeted disorder (e.g., depression), the type of prediction model (i.e., diagnostic, treatment prediction, prognostic), and the treatment advice provided (e.g., pharmacotherapy). All codings were checked by AK and any discrepancies were addressed in weekly calibration meetings.</p>
+<div class="cell" data-hash="report_cache/html/unnamed-chunk-3_1ea83f543fc80a1384f07b33d6eaed7a">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b0646a96acfba1c08b85" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b0646a96acfba1c08b85">{"x":{"diagram":"digraph prisma {\n    node [shape=\"box\", fontsize = 10];\n    graph [splines=ortho, nodesep=1, dpi = 72]\n    a -> nodups;\n    b -> nodups;\n    a [label=\"Patents identified through \nDWPI patent database \n(n = 703)\"];\n    b [label=\"Additional patents identified \nthrough other sources \n(n = 0)\"]\n    nodups -> incex;\n    nodups [label=\"Patents after duplicates removed\n(n = 703)\"];\n    incex -> {ex; ft}\n    incex [label=\"Patents screened\n(n = 703)\"];\n    ex [label=\"Patents excluded based on screening \n(n = 8)\"];\n    {rank=same; incex ex}\n    ft -> {qual; ftex};\n    ft [label=\"Patents assessed\nfor eligibility\n(n = 695)\"];\n    {rank=same; ft ftex}\n    ftex [label=\"Patents excluded (n = 416), with reasons:\n\nUnrelated to mental health (n = 343)\nNot mental disorder (n = 34)\nNot diagnostic, prognostic, or treatment prediction (n = 17)\nNot AI (n = 22)\"];\n    qual -> quant\n    qual [label=\"Patents included in\nqualitative synthesis\n(n = 279)\"];\n    quant [label=\"Patents included in\nquantitative synthesis\n(n = 279)\"];\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>We defined four inclusion criteria to determine whether patents should be retained for the review. First, we included patents if they reported on a tool in the mental health domain. This led to the exclusion of <em>n</em> = 343 patents unrelated to mental health (e.g., <span class="citation" data-cites="jin-pyeong_lee19">Jin-pyeong &amp; Lee (<a href="#ref-jin-pyeong_lee19" role="doc-biblioref">2019</a>)</span> describe a tool that may be used to predict persistent hemodynamic depression). Second, we included patents of tools designed to make predictions about mental disorders, defined according to established psychometric criteria. This led to the exclusion of <em>n</em> = 34 patents (e.g., <span class="citation" data-cites="kenyon_etal18">Kenyon et al. (<a href="#ref-kenyon_etal18" role="doc-biblioref">2018</a>)</span> describe a tool that generates a fatigue score for an individual). Third, patents were included if they reported on a tool that could be used for diagnostic, prognostic, or treatment prediction purposes, leading to the exclusion of <em>n</em> = 17 patents (e.g., <span class="citation" data-cites="kohn_etal21">Kohn et al. (<a href="#ref-kohn_etal21" role="doc-biblioref">2021</a>)</span> describe a tool that tracks mental health triggers, without providing diagnostic, treatment prediction, or prognostic information). Finally, patents were included if AI/ML technology was used to make predictions, leading to the exclusion of <em>n</em> = 22 patents (e.g., <span class="citation" data-cites="geigenmuller_etal20">Geigenmuller et al. (<a href="#ref-geigenmuller_etal20" role="doc-biblioref">2020</a>)</span> identifies metabolic markers of attention deficit hyperactivity disorder). The final dataset used for analysis includes 279 patents.</p>
+</section>
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
+<p>The data were analyzed using R <span class="citation" data-cites="rcoreteam22b">(Version 4.2.2, <a href="#ref-rcoreteam22b" role="doc-biblioref">R Core Team, 2022</a>)</span>. First, descriptive information on targeted disorders, prediction models, treatment recommendations, data sources, and regional distributions were generated using the <em>ggplot2</em> package <span class="citation" data-cites="wickham16">(<a href="#ref-wickham16" role="doc-biblioref">Wickham, 2016</a>)</span>. Second, the <em>GGally</em> <span class="citation" data-cites="schloerke_etal21">(<a href="#ref-schloerke_etal21" role="doc-biblioref">Schloerke et al., 2021</a>)</span>, <em>network</em> <span class="citation" data-cites="butts08 butts15">(<a href="#ref-butts08" role="doc-biblioref">Butts, 2008</a>, <a href="#ref-butts15" role="doc-biblioref">2015</a>)</span>, <em>igraph</em> <span class="citation" data-cites="csardi_nepusz06">(<a href="#ref-csardi_nepusz06" role="doc-biblioref">Csardi &amp; Nepusz, 2006</a>)</span>, and <em>ggplot2</em> <span class="citation" data-cites="wickham16">(<a href="#ref-wickham16" role="doc-biblioref">Wickham, 2016</a>)</span> packages were utilized to conduct a technology convergence analysis based on graphical networks depicting the connections between patent CPC codes over the years. CPC codes are ordered hierarchically, from sections describing the overall field of the technology to subgroups referring to technological details. Table 1 shows an example CPC hierarchy. CPC-based technology convergence analysis involves generating a matrix in which the columns and rows represent different CPC codes on the level of subclasses. Each matrix cell reports the count of patents connecting the two CPC codes. Subsequently, the matrix is transformed into network plots (one for each year) representing annual technology convergence patterns <span class="citation" data-cites="caviggioli16">(<a href="#ref-caviggioli16" role="doc-biblioref">Caviggioli, 2016</a>)</span>. Past research has investigated technology convergence trends using similar approaches based on patent classification codes <span class="citation" data-cites="nguyen_moehrle21 kang_etal15c joo_etal22">(<a href="#ref-joo_etal22" role="doc-biblioref">Joo et al., 2022</a>; <a href="#ref-kang_etal15c" role="doc-biblioref">J. H. Kang et al., 2015</a>; <a href="#ref-nguyen_moehrle21" role="doc-biblioref">Nguyen &amp; Moehrle, 2021</a>)</span>. Patent data provides unique insight into technology convergence because patent applications represent an accumulation of knowledge and advancement in a particular technological trajectory. The idea behind CPC-based technology convergence analysis is that linkages between technologies indicate two formerly distinct techniques moving towards unity to form novel products. The increasing complexity of merging fields sheds light on the likelihood of a new fusion in the coming years and highlights opportunities for combining expertise to create new assets <span class="citation" data-cites="caviggioli16">(<a href="#ref-caviggioli16" role="doc-biblioref">Caviggioli, 2016</a>)</span>.</p>
+<p>Third, structural topic modeling (STM) was applied to identify latent topics in the patent claims using the <em>stm</em> package <span class="citation" data-cites="roberts_etal19">(<a href="#ref-roberts_etal19" role="doc-biblioref">Roberts et al., 2019</a>)</span>. Topic modeling is a semantic-based text mining technique that can be used to create relationships between words and expressions <span class="citation" data-cites="jelodar_etal19 dotsika_watkins17">(<a href="#ref-dotsika_watkins17" role="doc-biblioref">Dotsika &amp; Watkins, 2017</a>; <a href="#ref-jelodar_etal19" role="doc-biblioref">Jelodar et al., 2019</a>)</span>. STM is advantageous compared to traditional Latent Dirichlet Allocation <span class="citation" data-cites="blei03">(LDA, <a href="#ref-blei03" role="doc-biblioref">Blei, 2003</a>)</span> because it allows for the incorporation of metadata that explains topical prevalence and the estimation of the relationship between topics and covariates <span class="citation" data-cites="roberts_etal19">(<a href="#ref-roberts_etal19" role="doc-biblioref">Roberts et al., 2019</a>)</span>. The covariates considered were patent publication years, combined patent impact, and countries. Different tests were implemented to select the most appropriate number of topics <span class="citation" data-cites="roberts_etal19 grimmer_stewart13 wallach_etal09 taddy12 mimno_etal11 erzurumlu_pachamanova20">(<a href="#ref-erzurumlu_pachamanova20" role="doc-biblioref">Erzurumlu &amp; Pachamanova, 2020</a>; <a href="#ref-grimmer_stewart13" role="doc-biblioref">Grimmer &amp; Stewart, 2013</a>; <a href="#ref-mimno_etal11" role="doc-biblioref">Mimno et al., 2011</a>; <a href="#ref-roberts_etal19" role="doc-biblioref">Roberts et al., 2019</a>; <a href="#ref-taddy12" role="doc-biblioref">Taddy, 2012</a>; <a href="#ref-wallach_etal09" role="doc-biblioref">Wallach et al., 2009</a>)</span>. The final selection was based on the model’s performance on these tests and its interpretability <span class="citation" data-cites="roberts_etal19 erzurumlu_pachamanova20">(<a href="#ref-erzurumlu_pachamanova20" role="doc-biblioref">Erzurumlu &amp; Pachamanova, 2020</a>; <a href="#ref-roberts_etal19" role="doc-biblioref">Roberts et al., 2019</a>)</span>. Finally, information on the most impactful patents each year was presented based on the combined patent impact index as an indicator of the commercial viability and the likelihood of patent enforcement <span class="citation" data-cites="allison_etal03">(<a href="#ref-allison_etal03" role="doc-biblioref">Allison et al., 2003</a>)</span>. [The data and code will be made available upon publication (https://osf.io/gzy9r/?view_only=e0ee985e9b874cff8b85674bec8be8f6)].</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="descriptive-information" class="level2">
+<h2 class="anchored" data-anchor-id="descriptive-information">Descriptive information</h2>
+<p>One patent may include multiple mental disorders, prediction models, treatment recommendations, and data sources. Most of the patents focused on predictions relating to multiple mental disorders or mental illness in general (i.e., “Unspecific”, <em>n</em> = 112, 37.09%). The label “Unspecific” was assigned if a) more than four disorders according to established psychometric criteria or b) “mental disorders” or “psychiatric disorders” were addressed along with one or more example diagnoses. For example, <span class="citation" data-cites="wall16">Wall (<a href="#ref-wall16" role="doc-biblioref">2016</a>)</span> describe a computer implemented method to diagnose mental disorders, “such as autism”. This group was followed by patents focusing on Depression (<em>n</em> = 63, 20.86%), Autism (<em>n</em> = 38, 12.58%), Anxiety (<em>n</em> = 13, 4.3%), PTSD (<em>n</em> = 13, 4.3%), Sleep Disorder (<em>n</em> = 12, 3.97%), Addiction (<em>n</em> = 11, 3.64%), Schizophrenia (<em>n</em> = 11, 3.64%), and Adhd (<em>n</em> = 10, 3.31%). Other mental disorders were addressed in <em>n</em> = 19 patents (6.29%).</p>
+<p>As shown in <a href="#fig-descriptives-pred">Figure&nbsp;1</a>, most patents (<em>n</em> = 248, 65.44%) focused on diagnosing multiple or one out of multiple mental disorders (i.e., “Unspecific”). Diagnostic modeling refers to the prediction of a certain psychiatric disorder, the determination of disorder severity, or the differentiation between two related disorders using patient information <span class="citation" data-cites="lin_etal20e">(<a href="#ref-lin_etal20e" role="doc-biblioref">Lin et al., 2020</a>)</span>. For example, <span class="citation" data-cites="liu_etal22t">Liu et al. (<a href="#ref-liu_etal22t" role="doc-biblioref">2022</a>)</span> describe a system for identifying disorder features shared across multiple mental disorders. About one-third of the patents involved treatment prediction modeling (<em>n</em> = 100, 26.39%). Treatment prediction approaches focus on forecasting responses to psychiatric treatments, selecting effective treatment approaches, or adjusting ongoing treatment <span class="citation" data-cites="lin_etal20e">(<a href="#ref-lin_etal20e" role="doc-biblioref">Lin et al., 2020</a>)</span>. For example, <span class="citation" data-cites="siekmeier_etal22a">Siekmeier et al. (<a href="#ref-siekmeier_etal22a" role="doc-biblioref">2022</a>)</span> describe a method that uses electroencephalogram (EEG) data to predict the response to a glutamate receptor agonist. Treatment prediction tools were often combined with the assessment of diagnostic information. That is, patients are often assigned diagnostic labels before predictions regarding the response to a specific treatment are made. In only <em>n</em> = 31 (8.18%) patents prognostic modeling was applied. Prognostic modeling refers to the prediction of future clinical outcomes without treatment intervention <span class="citation" data-cites="lin_etal20e">(<a href="#ref-lin_etal20e" role="doc-biblioref">Lin et al., 2020</a>)</span>. For example, the tool described in <span class="citation" data-cites="lyoo_etal21">Lyoo et al. (<a href="#ref-lyoo_etal21" role="doc-biblioref">2021</a>)</span> predicts the probability of future problematic behavior associated with PTSD.</p>
+<div class="cell" data-hash="report_cache/html/fig-descriptives-pred_ed84645c5dad34f6cc6b6787157b0274">
+<div class="cell-output-display">
+<div id="fig-descriptives-pred" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-descriptives-pred-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;1 Distribution of prediction models by mental disorders.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Treatment recommendations (referring to the selection or adjustment of treatment approaches) were provided in <em>n</em> = 80 (28.67%) patents. As can be seen in <a href="#fig-descriptives-treat">Figure&nbsp;2</a>, most recommended treatment approaches refer to digital therapy (<em>n</em> = 38, 45.24%). For example, <span class="citation" data-cites="kulkarni_krenn21">Kulkarni &amp; Krenn (<a href="#ref-kulkarni_krenn21" role="doc-biblioref">2021</a>)</span> describe a method of using patient data to derive an optimal digital therapeutics treatment plan. The second largest group refers to pharmacotherapy treatments (<em>n</em> = 32, 38.1%). For example, <span class="citation" data-cites="kang_etal20">J. W. Kang et al. (<a href="#ref-kang_etal20" role="doc-biblioref">2020</a>)</span> describe an antidepressant recommendation system based on patient information. Finally, electrotherapy recommendations (e.g., the adjustment of neuromodulation therapy) were provided in <em>n</em> = 14 (16.67%) patents. It becomes evident from the Figure that digital therapy was most often used to treat general mental health problems, compared to pharmacotherapy, which was often used for treating specific mental disorders, such as depression and autism.</p>
+<div class="cell" data-hash="report_cache/html/fig-descriptives-treat_06c89e9ae2fc9f2363f5be930df2c341">
+<div class="cell-output-display">
+<div id="fig-descriptives-treat" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-descriptives-treat-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;2 Distribution of treatment approaches addressed in the patents by mental disorders.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution of data sources used across mental disorders is depicted in <a href="#fig-descriptives-data">Figure&nbsp;3</a>. Most patents (<em>n</em> = 138, 28.81%) used behavioral data (e.g., video or audio recordings, data collected with smart devices), followed by biological (<em>n</em> = 94, 19.62%; e.g., blood samples, heart rate), experience-based (<em>n</em> = 76, 15.87%; e.g., questionnaires), neuroimaging (<em>n</em> = 75, 15.66%; e.g., electroencephalogram (EEG) or magnetic resonance imaging (MRI)), clinical records (<em>n</em> = 66, 13.78%; e.g., electronic health records), and sociodemographic data (<em>n</em> = 30, 6.26%). Although all data sources were used for making predictions regarding multiple disorders, we observe some characteristics, such as the use of biological data and clinical records in patents addressing schizophrenia and the use of neuroimaging and sociodemographic data in patents focused on ADHD.</p>
+<div class="cell" data-hash="report_cache/html/fig-descriptives-data_2040f4e59cfec25551fe6d3f90c72630">
+<div class="cell-output-display">
+<div id="fig-descriptives-data" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-descriptives-data-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;3 Distribution of data sources used to make predictions by mental disorders.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The regional distribution of assignees (i.e., the organization or individual with the property right to the patent) is shown in <a href="#fig-region-map">Figure&nbsp;4</a>. Most patents (<em>n</em> = 107, 38.35%) were assigned to individuals or institutions in the USA, followed by China (<em>n</em> = 74, 26.52%), South Korea (<em>n</em> = 40, 14.34%), India (<em>n</em> = 13, 4.66%), Japan (<em>n</em> = 9, 3.23%), Luxemburg (<em>n</em> = 7, 2.51%), Canada (<em>n</em> = 5, 1.79%), Israel (<em>n</em> = 5, 1.79%), Australia (<em>n</em> = 4, 1.43%), and Netherlands (<em>n</em> = 3, 1.08%). The regional trends are also reflected by the distribution of the most active assignees, with most patents being assigned to Blackthorn Therapeutics (<em>n</em> = 7, headquarter in San Franciso, USA) and Medtronic (<em>n</em> = 7, headquarter in Minneapolis, USA). They are followed by X Development (<em>n</em> = 6, headquarter in Mountain View, USA), IBM (<em>n</em> = 5, headquarter in Armonk, USA), Standford University (<em>n</em> = 4, Stanford, USA), the Third Military Medical University (<em>n</em> = 4, Chongqing, China), the Advanced Science and Technology Institute (<em>n</em> = 4, Yuseong-gu, South Korea), Hanyang University (<em>n</em> = 3, Seoul, South Korea), Zhejiang Technical University (<em>n</em> = 3, Hangzhou, China), and Ginger.io (<em>n</em> = 3, San Francisco, USA).</p>
+<div class="cell" data-hash="report_cache/html/fig-region-map_081f16d2a0ed50bd908e70f7616d3a92">
+<div class="cell-output-display">
+<div id="fig-region-map" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-region-map-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;4 Regional distribution of patent assignees. The map shows the global distribution and numbers of patent assignees as the individuals or organizations with property rights to the patents. In the case of organizational assignees, the map displays information on operational or executive headquarters. The information in the boxes contains the country code and names of the most active assignees (<em>n</em> &gt; 2 patents). No patents have been published in countries displayed in light grey.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="technology-convergence-based-on-cpc-codes" class="level2">
+<h2 class="anchored" data-anchor-id="technology-convergence-based-on-cpc-codes">Technology convergence based on CPC codes</h2>
+<p><a href="#fig-trend-cpc">Figure&nbsp;5</a> shows the relative frequency of CPC codes at the subclass level between 2015 and mid-October 2022. C12Q (“Measuring or testing processes involving enzymes, nucleic acids, or microorganisms”) peaked in early 2016, G01N (“Investigating or analyzing materials by determining their chemical or physical properties”) was mentioned most often at the end of 2017, and G06T (“Image data processing or generation”) peaked in early 2020. The number of single CPC codes decreased relative to the overall trend, indicating that the variety of codes mentioned increased over the years.</p>
+<div class="cell" data-hash="report_cache/html/fig-trend-cpc_8b83d05d9fc7cb48e71111bf4b97b647">
+<div class="cell-output-display">
+<div id="fig-trend-cpc" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-trend-cpc-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;5 Development of CPC codes on the subclass level between 2015 and October 2022. The general trend (black line) shows the development of the number of patents over time, while the colored lines described the development of individual CPC subclasses relative to the number of patents published over time. CPC subclass codes mentioned in <em>n</em> &gt; 9 months are included.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-cpc-net">Figure&nbsp;6</a> shows the cooccurrences of CPC subgroups belonging to distinct subclasses from 2015 to 2022. A key finding is that the overall complexity of technology combinations increased between 2015 (four cooccurrences) and 2021 (26 cooccurrences) and then decreased slightly (15 cooccurrences in 2022). Some subclasses, such as G16H (Healthcare informatics), have been consistently present and connected to multiple other subclasses across all years. In addition, each year, new technology combinations have been identified. For 2015, we see a relatively simple net of combinations between bioinformatics (G16B), preparations for pharmaceutical products (A61K), healthcare informatics (G16H), and measuring or testing processes involving enzymes, nucleic acids, or microorganisms (C12Q). For 2016, we observe two relatively separate fields. We see that diagnostic instruments (A61B) were introduced and combined with electronic and image data processing (G06F and G06T). In addition, we observe that G01N (Investigating or analyzing materials by determining their physical or chemical properties) was introduced and combined with bioinformatics (G16B) and processes involving enzymes, nucleic acids, or microorganisms (C12Q). In 2017, the technology convergence net appears less complex. New inventions focused on the integration of speech analysis (G10L) and computational modeling (G06N) with diagnostic instruments and processes (A61B). In 2018, the complexity and density of the network increases again. New developments include the introduction of wireless communication networks (H04W), data processing systems (G06Q), and systems for the transmission of digital information (H04L), which were combined with healthcare informatics (G16H) and diagnostic instruments (A61B). For 2019, we observe the formation of connected but somewhat distant fields. The first field combined healthcare informatics (G16H) with devices for introducing media into or onto the body (A61M) and electrotherapy (A61N). The second field combined image or video data recognition or understanding (G06V) with diagnostic technology (A61B). The third field combined diagnostic instruments and processes (A61B) with computational models (G06N), speech analysis (G10L), and graphical data reading (G06K). Finally, the last field consists of dense connections of technologies relating to digital data processing and communication networks (H04W, H04L, G06Q). In 2020, formerly somewhat distant fields moved towards the center, and the network appears denser compared to 2019, with a strong focus on the core technologies healthcare informatics (G16H) and diagnostic instruments and processes (A61B). In 2021, the density of the network reaches its peak. While G16H and A61B still form the center of the network, combinations with other technologies, such as devices for introducing media into or onto the body (A61M), electrotherapy (A61N), physical therapy (A61H), and the investigation of physical and chemical materials and processes (C12Q and G01N) gain relevance. The network appears less dense in 2022 compared to 2021, and most inventions concentrate on combining the two core technologies (G16H and A61B). Multiple CPC codes that were present in 2021 are missing in 2022. Because we only included data until mid-October 2022, it is not surprising that the total number of patents published in 2022 (<em>n</em> = 77) is below the number of patents published in 2021 (<em>n</em> = 88) - a decrease of 12.50%. However, the number of CPC codes mentioned in 2021 (<em>n</em> = 26) decreased by 42.31% (<em>n</em> = 15 in 2022), indicating a concentration on fewer technologies and technology combinations compared to 2021.</p>
+<div class="cell" data-hash="report_cache/html/fig-cpc-net_b7982985683ed2ddbf144e998d931fc3">
+<div class="cell-output-display">
+<div id="fig-cpc-net" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-cpc-net-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;6 Networks of CPC subgroup codes between 2015 and October 2022. The networks represent the co-occurrences of CPC subgroups belonging to distinct subclasses. The size of the nodes (filled circles) signifies the number of times a subgroup has been observed; the closer two nodes are to one another, the more frequently their respective subgroups have been mentioned together.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="topic-modeling-based-on-claims" class="level2">
+<h2 class="anchored" data-anchor-id="topic-modeling-based-on-claims">Topic modeling based on claims</h2>
+<p>We empirically evaluated topic numbers to select a range of viable models using metrics such as held-out likelihood, residual spread, semantic coherence, and lower bound on the marginal likelihood (Fig. B in the Online Appendix). We then chose topic models with ten to 20 topics to analyze the semantic coherence vs.&nbsp;exclusivity trade-offs and the interpretability of the topics (Fig. C in the Online Appendix). We settled on the eleven-topic solution based on our evaluation of these metrics and topic interpretability. We then inspected each topic’s top words, abstracts, and claims to generate the topic descriptions.</p>
+<p>The topics described in Table 2 highlight the various issues addressed in the patents. Most topics describe how certain data sources (e.g., “EEG biomarker data”) may be used in ML models (e.g., “neural networks”) to generate specific diagnostic, treatment prediction, or prognostic recommendations or outcomes (e.g., “deriving treatment recommendations”). Most topics mention mental health issues in general. However, some topics address specific mental disorders, such as Topic 4, which concentrates on the identification of biomarkers for depression, Topic 6, which describes features relevant to ADHD diagnosis from neurological and behavioral data, Topic 10, which is focused on generating insight into sleep-related problems, and Topic 11, which describes methods for preempting addiction-related behaviors. Similarly, some specific data sources, such as (EEG) biomarker data (Topics 1 and 4), genetic data (Topic 3), behavioral data (Topic 5), neurological data (Topics 6 and 7), acoustic data (Topic 8), mobile phone data (Topic 10), and sensor data (Topic 11). Finally, some topics mention specific ML techniques used to derive predictions, such as (convolutional) neural networks (Topics 1 and 4) and data feature identification and processing (Topics 3 and 6).</p>
+<p><a href="#fig-topic_plot">Figure&nbsp;7</a> shows the topic probabilities over the period of 2015 to mid-October 2022. Results of the regression analysis with the <em>estimateEffect</em> function showed that Topic 3 (“Generating features from genetic data”) exhibited a negative trend (<em>B</em> = -0.045, <em>SE</em> = 0.010, <em>t</em> = -4.663, <em>p</em> &lt; .001). Furthermore, Topic 3 was negatively (<em>B</em> = -0.003, <em>SE</em> = 0.001, <em>t</em> = -2.303, <em>p</em> = .022) and Topic 6 (“Identifying features relevant for ADHD diagnosis from neurological and behavioral data”) was positively (<em>B</em> = 0.004, <em>SE</em> = 0.002, <em>t</em> = 2.278, <em>p</em> = .024) related to combined patent impact.</p>
+<div class="cell" data-hash="report_cache/html/fig-topic_plot_7314c43b3231162df78673ef3efa52c7">
+<div class="cell-output-display">
+<div id="fig-topic_plot" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-topic_plot-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption"><strong>Figure</strong>&nbsp;7 Topic probabilities trends between 2015 and October 2022. Topic probabilities represent the probabilities that documents in that year are generated from each topic.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="characteristics-of-the-most-impactful-patent-per-year" class="level2">
+<h2 class="anchored" data-anchor-id="characteristics-of-the-most-impactful-patent-per-year">Characteristics of the most impactful patent per year</h2>
+<p>2015: <span class="citation" data-cites="muller-myhsok_etal15">Müller-Myhsok et al. (<a href="#ref-muller-myhsok_etal15" role="doc-biblioref">2015</a>)</span> present a tool for predicting treatment responses to antidepressant treatments with corticotropin-releasing hormone (CRH) receptor antagonists. The tool is based on a single nucleotide polymorphism (SNP) genotyping analysis to determine CRH activity in a group of patients. An ML algorithm is developed to determine a value indicative of CRH overactivity. Other patents have been cited in the field of predicting treatment responses in patients with mental disorders, such as a “Method for predicting a treatment response to a CRHR1 antagonist and/or a V1B antagonist in a patient with depressive and/or anxiety symptoms” <span class="citation" data-cites="holsboer_muller-myhsok20a">(<a href="#ref-holsboer_muller-myhsok20a" role="doc-biblioref">Holsboer &amp; Müller-Myhsok, 2020</a>)</span>.</p>
+<p>2016: <span class="citation" data-cites="dilorenzo16a">DiLorenzo (<a href="#ref-dilorenzo16a" role="doc-biblioref">2016</a>)</span> describe a method to deliver a neuromodulation therapy, such as intracranial electrical stimulation, to treat psychiatric disorders. The method adjusts the therapy parameters relative to the prior therapy and patient responses. This product has been commercialized by the current patent assignee, Livanova, and is used to treat depression, among other conditions (<a href="https://www.livanova.com/depression/en-us">livanova.com</a>). Citing patents include <span class="citation" data-cites="perez_etal19c">Perez et al. (<a href="#ref-perez_etal19c" role="doc-biblioref">2019</a>)</span>, which discusses transcutaneous electrical stimulation for various applications, and US11273283B2, which describes tools that decode neural correlates of desired emotional states or sleep states for use in neurostimulation therapy.</p>
+<p>2017: <span class="citation" data-cites="karam_etal17">Karam et al. (<a href="#ref-karam_etal17" role="doc-biblioref">2017</a>)</span> refers to a tool for the monitoring of bipolar disorder using speech analysis. It records speech data from communication devices such as mobile phones and then extracts features from the data. These features are then used in a decision module to classify mental health conditions, such as bipolar disorder. Several commercial applications based on speech-based mood monitoring have been released in the recent years, for example, by SondeHealth (<a href="https://www.sondehealth.com/">sondehealth.com</a>) and Kintsugi <a href="https://www.kintsugihealth.com/product">kintsugihealth.com</a>). Kintsugi Voice can be used in patient monitoring apps to detect signs of depression and anxiety from speech data.</p>
+<p>2018: <span class="citation" data-cites="moturu_madan18a">Moturu &amp; Madan (<a href="#ref-moturu_madan18a" role="doc-biblioref">2018</a>)</span> describe a method of using mobile phone data to generate a medical status profile and treatment recommendations (medication type and dosage). The collected information is then transmitted to a care provider, who can adjust the medical status and treatment recommendation based on input information. The current assignee, Ginger (<a href="https://www.ginger.com/">ginger.com</a>), provides telemedicine services, such as behavioral health coaching, psychiatry, and self-care solutions. Other AI-enabled advisory systems that generate health consultation recommendations and trigger alerts based on input data have been mentioned in related patents, such as <span class="citation" data-cites="neumann20a">Neumann (<a href="#ref-neumann20a" role="doc-biblioref">2020</a>)</span>.</p>
+<p>2019: <span class="citation" data-cites="williams19a">Williams (<a href="#ref-williams19a" role="doc-biblioref">2019</a>)</span> describe a technique that uses wireless location, context, and/or communication network data to preempt behavior associated with addiction. The technique collects both behavioral and environmental data, such as user location, from a mobile device and estimates the risk of relapse associated with that location. If the risk of relapse is high, the user is then notified and requested to engage in preemptive behavior, such as attending an addiction support meeting. This patented technique has been commercialized by companies such as Behaivior (<a href="https://www.behaivior.com/about">behaivior.com</a>), which uses wearable device data and AI-enabled predictions to determine risks for addiction-related behavior.</p>
+<p>2020: <span class="citation" data-cites="chekroud_etal20a">A. Chekroud et al. (<a href="#ref-chekroud_etal20a" role="doc-biblioref">2020</a>)</span> provide a predictive framework for depression treatment outcomes, based on questionnaire data. The current assignee, SpringHealth (<a href="https://springhealth.com/">springhealth.com</a>), offers digital cognitive-behavioral therapy and other related treatments. Several other patents related to this technology, such as <span class="citation" data-cites="mason21a">Mason (<a href="#ref-mason21a" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="mason_etal22a">Mason et al. (<a href="#ref-mason_etal22a" role="doc-biblioref">2022</a>)</span>, discuss methods of optimizing telemedical treatment, or introducing remote examinations with augmented reality, respectively.</p>
+<p>2021: <span class="citation" data-cites="komogortsev21a">Komogortsev (<a href="#ref-komogortsev21a" role="doc-biblioref">2021</a>)</span> describe a health assessment technique that evaluates mental health conditions (e.g., autism, depression) by analyzing the behavior of the human visual system. This technique is employed by iMotions in their biosensor-based diagnostics (<a href="https://imotions.com/applications/healthcare/">imotions.com</a>). Other patents that reference this technique are related to tracking eye movement for optimizing extended reality environment interactions <span class="citation" data-cites="saito22a">(e.g., <a href="#ref-saito22a" role="doc-biblioref">Saito, 2022</a>)</span>.</p>
+<p>2022: Finally, <span class="citation" data-cites="vayrynen_kortelainen22">Väyrynen &amp; Kortelainen (<a href="#ref-vayrynen_kortelainen22" role="doc-biblioref">2022</a>)</span> describe a method for using electroencephalography (EEG) signals to predict the occurrence of mental health conditions. The method involves comparing the phase-to-phase, phase-to-amplitude, and amplitude-to-phase coupling of the EEG signal of a patient to that of a “normal” brain. This comparison can be used to predict the occurrence of mental health conditions, such as schizophrenia or depressive disorder.</p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>As the field of precision psychiatry advances rapidly, and a growing number of AI-enabled tools become available, it is critical to comprehend central areas of innovation to ensure the successful integration of these tools into practice and support their continual progress. The current patent review summarizes the content and scope of patents on AI-enabled precision psychiatry applications using diagnostic, treatment prediction, and prognostic modeling approaches. Results show that the majority of tools focus on diagnostic modeling. Most applications make predictions regarding multiple mental disorders, followed by depression and autism. This trend aligns with transdiagnostic approaches in psychiatry, which focus on cutting across conventional disorder categories defined in DSM/ICD manuals <span class="citation" data-cites="rosenfeld_etal19">(e.g., <a href="#ref-rosenfeld_etal19" role="doc-biblioref">Rosenfeld et al., 2019</a>)</span>. About one-third of the tools provided treatment-related recommendations, focusing on recommending and administering effective digital therapy and pharmacotherapy. Behavioral data was the most commonly used data source, followed by biological data, neuroimaging data, experience-based data, clinical records, and sociodemographic data. The USA held the majority of patent publications, followed by China, South Korea, India, and Japan. The review provides insight into the emerging field of AI-enabled precision psychiatry, which may inform the adoption of these tools into clinical practice.</p>
+<p>An analysis of network plots of CPC subclass combinations revealed that the rate of technology convergence increased significantly between 2015 and 2021. The results of CPC-based technology convergence may be interpreted in light of the technology life cycle <span class="citation" data-cites="haupt_etal07">(<a href="#ref-haupt_etal07" role="doc-biblioref">Haupt et al., 2007</a>)</span>. During the introduction phase (2015 to 2016), a low level of technological diffusion and intensity is exhibited. The pace of technological advances increases during the subsequent growth phase, characterized by a general rise in CPC codes and code cooccurrences (after 2016). Although the number of CPC codes and cooccurrences decreases from 2021 to 2022, it remains unclear whether this decline can be attributed to external relatively temporary influencing factors (e.g., development obstacles due to Covid-19) or represents an early sign of technology maturity <span class="citation" data-cites="probst_etal21 haupt_etal07">(<a href="#ref-haupt_etal07" role="doc-biblioref">Haupt et al., 2007</a>; <a href="#ref-probst_etal21" role="doc-biblioref">Probst et al., 2021</a>)</span>. However, since approximately 18 months pass between issuing a patent and patent publication, the results of the network developments must be interpreted in light of the time delay between making an invention and the patent publication. This delay might also explain the prominence of CPC codes relating to physical therapy, electrotherapy, and devices involving the introduction of media into or onto the body in 2021. Accordingly, the increased popularity of remote therapeutics observed since the beginning of the Covid-19 pandemic in early 2020 may be better reflected in patents published after 2021 <span class="citation" data-cites="witteveen_etal22">(<a href="#ref-witteveen_etal22" role="doc-biblioref">Witteveen et al., 2022</a>)</span>.</p>
+<p>The growth in the number of CPC codes and the increase in technology convergence networks observed between 2015 and 2021 may be attributed to the complexity of the technological content <span class="citation" data-cites="curran13 no_park10 caviggioli16">(<a href="#ref-caviggioli16" role="doc-biblioref">Caviggioli, 2016</a>; <a href="#ref-curran13" role="doc-biblioref">Curran, 2013</a>; <a href="#ref-no_park10" role="doc-biblioref">No &amp; Park, 2010</a>)</span>. That is, the development of AI-enabled precision psychiatry tools is spurred by the implementation of new methods and systems that enhance the accuracy of predictions <span class="citation" data-cites="lin_etal20e curran13">(<a href="#ref-curran13" role="doc-biblioref">Curran, 2013</a>; <a href="#ref-lin_etal20e" role="doc-biblioref">Lin et al., 2020</a>)</span>. Core technologies, namely healthcare informatics and diagnostic instruments, are positioned at the center of the networks over time. The emergence of new technologies is enabled through novel combinations of ICT and AI-enabled systems. While the increase in complexity of AI-enabled precision psychiatry tools has the potential to benefit mental health practice, it also creates challenges. Practitioners and trainers must be familiar with and trustful of the latest technologies to maximize their practical value. The results of the technology convergence analysis highlight opportunities for bringing together expertise from multiple fields to move AI-enabled precision psychiatry forward.</p>
+<p>We employed topic modeling as an exploratory approach to investigate technological fields and combinations beyond technology convergence information based on CPC codes. Eleven topics were identified that combine multiple data streams (e.g., EEG data, behavioral data, genetic data), purposes (e.g., diagnosing or treating mental disorders), and disorders (e.g., depression and addiction). Regression analysis results revealed that patents generating features from genetic data were less likely to be enforced, and the number of documents associated with that topic diminished over time. Potential explanations for this trend include the troubles related to the high dimensionality and heterogeneity of genetic data, which necessitates collecting large datasets and using complex modeling techniques <span class="citation" data-cites="su_etal20">(<a href="#ref-su_etal20" role="doc-biblioref">Su et al., 2020</a>)</span>. Additionally, it has been demonstrated that neuroimaging data produces more accurate classifiers than genetic data for diagnosing various mental disorders <span class="citation" data-cites="abd-alrazaq_etal22 su_etal20">(<a href="#ref-abd-alrazaq_etal22" role="doc-biblioref">Abd-alrazaq et al., 2022</a>; <a href="#ref-su_etal20" role="doc-biblioref">Su et al., 2020</a>)</span>. Another potential explanation may be the maturity of the technology for deriving diagnoses based on genetic data relative to more recent advances, such as the utilization of behavioral data gathered through mobile devices, which may have caused a transition to generate features for precision psychiatry using more modern and convenient data acquisition approaches <span class="citation" data-cites="su_etal20 mcguffin_etal04 bennett_etal12">(<a href="#ref-bennett_etal12" role="doc-biblioref">Bennett et al., 2012</a>; <a href="#ref-mcguffin_etal04" role="doc-biblioref">McGuffin et al., 2004</a>; <a href="#ref-su_etal20" role="doc-biblioref">Su et al., 2020</a>)</span>.</p>
+<p>In the final part of this review, we examine the characteristics and resulting developments of the most impactful patents per year since 2015. These patents cover a broad range of applications, including the prediction of responses to psychotropic drug treatment (2015), neuromodulation therapy (2016), speech-based mood monitoring (2017), recommendations based on mobile phone data (2018), preempting addictive behavior (2019), predicting depression treatment outcomes based on questionnaire data (2020), mental health assessment using eye tracking (2021), and EEG-based diagnostics (2022). The commercialization of many of these techniques speaks to their practical relevance. An analysis of citing patents demonstrates the field’s continual development and potential for advancing existing technologies. Of all patents published, <em>n</em> = 172 (61.65) originated from outside the US. Interestingly, all the most impactful patents were assigned to US individuals or institutions. This could be due to the relatively high quality of US patents in the international comparison <span class="citation" data-cites="boeing_mueller16 boeing_mueller19 torrance_west17">(<a href="#ref-boeing_mueller19" role="doc-biblioref">Boeing &amp; Mueller, 2019</a>, <a href="#ref-boeing_mueller16" role="doc-biblioref">2016</a>; <a href="#ref-torrance_west17" role="doc-biblioref">Torrance &amp; West, 2017</a>)</span>. US data protection legislation is also less stringent than other countries, such as those in Europe <span class="citation" data-cites="almeida_etal22 pesapane_etal18">(<a href="#ref-almeida_etal22" role="doc-biblioref">Almeida et al., 2022</a>; <a href="#ref-pesapane_etal18" role="doc-biblioref">Pesapane et al., 2018</a>)</span>, which may contribute to the rapid development and commercialization of AI-enabled precision psychiatry tools that rely heavily on large amounts of sensitive data.</p>
+<p>The analysis of the scope, content, and development trends of technology using patent data is associated with some limitations. Structural differences in the propensity of individuals and organizations to publish patents lead to an under-presentation of the true extent of R&amp;D developments when using patent data alone <span class="citation" data-cites="curran13 caviggioli16">(<a href="#ref-caviggioli16" role="doc-biblioref">Caviggioli, 2016</a>; <a href="#ref-curran13" role="doc-biblioref">Curran, 2013</a>)</span>. Despite this limitation, patent data offers insight into technology advancements that cannot be gained from an analysis of research data. Future research may combine information gained from patents and research data to identify knowledge and technology development gaps in either domain, thus highlighting opportunities and challenges for researchers and patenting entities.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>In recent years, AI-enabled precision psychiatry has developed into an increasingly complex field, with patents published between 2015 and 2022 covering a variety of applications aiming at increasing precision in diagnosing mental disorders and providing practical treatment recommendations. The review highlights potential application areas, current and future technological trends, and commercial opportunities. Mental health practitioners could use the information to understand the AI tools available to them and develop the skills necessary for guaranteeing the smooth adoption of available tools into practice.</p>
+</section>
+<section id="references" class="level1 unnumbered">
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-aafjes-vandoorn_etal21" class="csl-entry" role="doc-biblioentry">
+Aafjes-van Doorn, K., Kamsteeg, C., Bate, J., &amp; Aafjes, M. (2021). A scoping review of machine learning in psychotherapy research. <em>Psychotherapy Research</em>, <em>31</em>(1), 92–116. <a href="https://doi.org/10.1080/10503307.2020.1808729">https://doi.org/10.1080/10503307.2020.1808729</a>
+</div>
+<div id="ref-abd-alrazaq_etal22" class="csl-entry" role="doc-biblioentry">
+Abd-alrazaq, A., Alhuwail, D., Schneider, J., Toro, C. T., Ahmed, A., Alzubaidi, M., Alajlani, M., &amp; Househ, M. (2022). The performance of artificial intelligence-driven technologies in diagnosing mental disorders: An umbrella review. <em>Npj Digital Medicine</em>, <em>5</em>(1), 1–12. <a href="https://doi.org/10.1038/s41746-022-00631-8">https://doi.org/10.1038/s41746-022-00631-8</a>
+</div>
+<div id="ref-allison_etal03" class="csl-entry" role="doc-biblioentry">
+Allison, J. R., Lemley, M. A., Moore, K. A., &amp; Trunkey, R. D. (2003). <em>Valuable patents</em> (No. 426020). <a href="https://papers.ssrn.com/abstract=426020">https://papers.ssrn.com/abstract=426020</a>
+</div>
+<div id="ref-almeida_etal22" class="csl-entry" role="doc-biblioentry">
+Almeida, D., Shmarko, K., &amp; Lomas, E. (2022). The ethics of facial recognition technologies, surveillance, and accountability in an age of artificial intelligence: A comparative analysis of <span>US</span>, <span>EU</span>, and <span>UK</span> regulatory frameworks. <em><span>AI</span> and Ethics</em>, <em>2</em>(3), 377–387. <a href="https://doi.org/10.1007/s43681-021-00077-w">https://doi.org/10.1007/s43681-021-00077-w</a>
+</div>
+<div id="ref-baglieri_cesaroni13" class="csl-entry" role="doc-biblioentry">
+Baglieri, D., &amp; Cesaroni, F. (2013). Capturing the real value of patent analysis for r&amp;d strategies. <em>Technology Analysis &amp; Strategic Management</em>, <em>25</em>(8), 971–986. <a href="https://doi.org/10.1080/09537325.2013.823149">https://doi.org/10.1080/09537325.2013.823149</a>
+</div>
+<div id="ref-benjamens_etal20" class="csl-entry" role="doc-biblioentry">
+Benjamens, S., Dhunnoo, P., &amp; Meskó, B. (2020). The state of artificial intelligence-based <span>FDA</span>-approved medical devices and algorithms: An online database. <em>Npj Digital Medicine</em>, <em>3</em>(1), 1–8. <a href="https://doi.org/10.1038/s41746-020-00324-0">https://doi.org/10.1038/s41746-020-00324-0</a>
+</div>
+<div id="ref-bennett_etal12" class="csl-entry" role="doc-biblioentry">
+Bennett, C., Doub, T., &amp; Selove, R. (2012). <span>EHRs</span> connect research and practice: Where predictive modeling, artificial intelligence, and clinical decision support intersect. <em>Health Policy and Technology</em>, <em>1</em>(2), 105–114. <a href="https://doi.org/10.1016/j.hlpt.2012.03.001">https://doi.org/10.1016/j.hlpt.2012.03.001</a>
+</div>
+<div id="ref-blei03" class="csl-entry" role="doc-biblioentry">
+Blei, D. M. (2003). Latent dirichlet allocation. <em>Journal of Machine Learning Research</em>, <em>3</em>, 993–1022. <a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf?ref=https://githubhelp.com">https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf?ref=https://githubhelp.com</a>
+</div>
+<div id="ref-boeing_mueller19" class="csl-entry" role="doc-biblioentry">
+Boeing, P., &amp; Mueller, E. (2019). Measuring china’s patent quality: Development and validation of <span>ISR</span> indices. <em>China Economic Review</em>, <em>57</em>. <a href="https://doi.org/10.1016/j.chieco.2019.101331">https://doi.org/10.1016/j.chieco.2019.101331</a>
+</div>
+<div id="ref-boeing_mueller16" class="csl-entry" role="doc-biblioentry">
+Boeing, P., &amp; Mueller, E. (2016). Measuring patent quality in cross-country comparison. <em>Economics Letters</em>, <em>149</em>, 145–147. <a href="https://doi.org/10.1016/j.econlet.2016.10.039">https://doi.org/10.1016/j.econlet.2016.10.039</a>
+</div>
+<div id="ref-butts08" class="csl-entry" role="doc-biblioentry">
+Butts, C. T. (2008). Network: A package for managing relational data in r. <em>Journal of Statistical Software</em>, <em>24</em>(2). <a href="https://doi.org/10.18637/jss.v024.i02">https://doi.org/10.18637/jss.v024.i02</a>
+</div>
+<div id="ref-butts15" class="csl-entry" role="doc-biblioentry">
+Butts, C. T. (2015). <em>Network: Classes for relational data</em>. <a href="https://CRAN.R-project.org/package=network">https://CRAN.R-project.org/package=network</a>
+</div>
+<div id="ref-bzdok_meyer-lindenberg18" class="csl-entry" role="doc-biblioentry">
+Bzdok, D., &amp; Meyer-Lindenberg, A. (2018). Machine learning for precision psychiatry: Opportunities and challenges. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, <em>3</em>(3), 223–230. <a href="https://doi.org/10.1016/j.bpsc.2017.11.007">https://doi.org/10.1016/j.bpsc.2017.11.007</a>
+</div>
+<div id="ref-caviggioli16" class="csl-entry" role="doc-biblioentry">
+Caviggioli, F. (2016). Technology fusion: Identification and analysis of the drivers of technology convergence using patent data. <em>Technovation</em>, <em>55-56</em>, 22–32. <a href="https://doi.org/10.1016/j.technovation.2016.04.003">https://doi.org/10.1016/j.technovation.2016.04.003</a>
+</div>
+<div id="ref-chekroud_etal21" class="csl-entry" role="doc-biblioentry">
+Chekroud, A. M., Bondar, J., Delgadillo, J., Doherty, G., Wasil, A., Fokkema, M., Cohen, Z., Belgrave, D., DeRubeis, R., Iniesta, R., Dwyer, D., &amp; Choi, K. (2021). The promise of machine learning in predicting treatment outcomes in psychiatry. <em>World Psychiatry</em>, <em>20</em>(2), 154–170. <a href="https://doi.org/10.1002/wps.20882">https://doi.org/10.1002/wps.20882</a>
+</div>
+<div id="ref-chekroud_etal16" class="csl-entry" role="doc-biblioentry">
+Chekroud, A. M., Zotti, R. J., Shehzad, Z., Gueorguieva, R., Johnson, M. K., Trivedi, M. H., Cannon, T. D., Krystal, J. H., &amp; Corlett, P. R. (2016). Cross-trial prediction of treatment outcome in depression: A machine learning approach. <em>The Lancet Psychiatry</em>, <em>3</em>(3), 243–250. <a href="https://doi.org/10.1016/S2215-0366(15)00471-X">https://doi.org/10.1016/S2215-0366(15)00471-X</a>
+</div>
+<div id="ref-chekroud_etal20a" class="csl-entry" role="doc-biblioentry">
+Chekroud, A., Krystal, J. H., Gueorguieva, R., &amp; Chandra, A. (2020). <em>Methods and apparatus for predicting depression treatment outcomes</em> (U.S. patent No. 20200143922A1). <a href="https://patents.google.com/patent/US20200143922A1/en?oq=US20200143922A1">https://patents.google.com/patent/US20200143922A1/en?oq=US20200143922A1</a>
+</div>
+<div id="ref-choi_song18" class="csl-entry" role="doc-biblioentry">
+Choi, D., &amp; Song, B. (2018). Exploring technological trends in logistics: Topic modeling-based patent analysis. <em>Sustainability</em>, <em>10</em>(8), 2810. <a href="https://doi.org/10.3390/su10082810">https://doi.org/10.3390/su10082810</a>
+</div>
+<div id="ref-csardi_nepusz06" class="csl-entry" role="doc-biblioentry">
+Csardi, G., &amp; Nepusz, T. (2006). <em>The igraph software package for complex network research</em>. <a href="https://igraph.org">https://igraph.org</a>
+</div>
+<div id="ref-curran13" class="csl-entry" role="doc-biblioentry">
+Curran, C. S. (2013). <em>The anticipation of converging industries. A concept applied to nutraceuticals and functional foods</em>. Springer. <a href="https://link.springer.com/book/10.1007/978-1-4471-5170-8">https://link.springer.com/book/10.1007/978-1-4471-5170-8</a>
+</div>
+<div id="ref-curran_etal10" class="csl-entry" role="doc-biblioentry">
+Curran, C.-S., Bröring, S., &amp; Leker, J. (2010). Anticipating converging industries using publicly available data. <em>Technological Forecasting and Social Change</em>, <em>77</em>(3), 385–395. <a href="https://doi.org/10.1016/j.techfore.2009.10.002">https://doi.org/10.1016/j.techfore.2009.10.002</a>
+</div>
+<div id="ref-Diagnostic22" class="csl-entry" role="doc-biblioentry">
+<em>Diagnostic and statistical manual of mental disorders</em> (5th ed., text rev.). (2022). [Computer software]. American Psychiatric Association. <a href="https://doi.org/10.1176/appi.books.9780890425787">https://doi.org/10.1176/appi.books.9780890425787</a>
+</div>
+<div id="ref-dilorenzo16a" class="csl-entry" role="doc-biblioentry">
+DiLorenzo, D. J. (2016). <em>Methods and systems for determining subject-specific parameters for a neuromodulation therapy</em> (U.S. patent No. 9320900B2). <a href="https://patents.google.com/patent/US9320900B2/en?oq=US9320900B2">https://patents.google.com/patent/US9320900B2/en?oq=US9320900B2</a>
+</div>
+<div id="ref-dotsika_watkins17" class="csl-entry" role="doc-biblioentry">
+Dotsika, F., &amp; Watkins, A. (2017). Identifying potentially disruptive trends by means of keyword network analysis. <em>Technological Forecasting and Social Change</em>, <em>119</em>, 114–127. <a href="https://doi.org/10.1016/j.techfore.2017.03.020">https://doi.org/10.1016/j.techfore.2017.03.020</a>
+</div>
+<div id="ref-drysdale_etal17" class="csl-entry" role="doc-biblioentry">
+Drysdale, A. T., Grosenick, L., Downar, J., Dunlop, K., Mansouri, F., Meng, Y., Fetcho, R. N., Zebley, B., Oathes, D. J., Etkin, A., Schatzberg, A. F., Sudheimer, K., Keller, J., Mayberg, H. S., Gunning, F. M., Alexopoulos, G. S., Fox, M. D., Pascual-Leone, A., Voss, H. U., … Liston, C. (2017). Resting-state connectivity biomarkers define neurophysiological subtypes of depression. <em>Nature Medicine</em>, <em>23</em>(1), 28–38. <a href="https://doi.org/10.1038/nm.4246">https://doi.org/10.1038/nm.4246</a>
+</div>
+<div id="ref-dwyer_etal18" class="csl-entry" role="doc-biblioentry">
+Dwyer, D. B., Falkai, P., &amp; Koutsouleris, N. (2018). Machine learning approaches for clinical psychology and psychiatry. <em>Annual Review of Clinical Psychology</em>, <em>14</em>(1), 91–118. <a href="https://doi.org/10.1146/annurev-clinpsy-032816-045037">https://doi.org/10.1146/annurev-clinpsy-032816-045037</a>
+</div>
+<div id="ref-erzurumlu_pachamanova20" class="csl-entry" role="doc-biblioentry">
+Erzurumlu, S. S., &amp; Pachamanova, D. (2020). Topic modeling and technology forecasting for assessing the commercial viability of healthcare innovations. <em>Technological Forecasting and Social Change</em>, <em>156</em>, 120041. <a href="https://doi.org/10.1016/j.techfore.2020.120041">https://doi.org/10.1016/j.techfore.2020.120041</a>
+</div>
+<div id="ref-fernandes_etal17" class="csl-entry" role="doc-biblioentry">
+Fernandes, B. S., Williams, L. M., Steiner, J., Leboyer, M., Carvalho, A. F., &amp; Berk, M. (2017). The new field of <span>“precision psychiatry.”</span> <em><span>BMC</span> Medicine</em>, <em>15</em>(1), 80. <a href="https://doi.org/10.1186/s12916-017-0849-x">https://doi.org/10.1186/s12916-017-0849-x</a>
+</div>
+<div id="ref-geigenmuller_etal20" class="csl-entry" role="doc-biblioentry">
+Geigenmuller, U., Damian, D., Pacula, M., &amp; DePristo, M. A. (2020). <em>Metabolic markers of attention deficit hyperactivity disorder metabolic markers of attention deficit hyperactivity disorder metabolic markers of attention deficit hyperactivity disorder</em> (U.S. patent No. 20200188335A1). <a href="https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=US20200188335A120200618&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false">https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=US20200188335A120200618&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false</a>
+</div>
+<div id="ref-grimmer_stewart13" class="csl-entry" role="doc-biblioentry">
+Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. <em>Political Analysis</em>, <em>21</em>(3), 267–297. <a href="https://doi.org/10.1093/pan/mps028">https://doi.org/10.1093/pan/mps028</a>
+</div>
+<div id="ref-harryson08" class="csl-entry" role="doc-biblioentry">
+Harryson, S. J. (2008). Entrepreneurship through relationships – navigating from creativity to commercialisation. <em>R&amp;D Management</em>, <em>38</em>(3), 290–310. <a href="https://doi.org/10.1111/j.1467-9310.2008.00516.x">https://doi.org/10.1111/j.1467-9310.2008.00516.x</a>
+</div>
+<div id="ref-haupt_etal07" class="csl-entry" role="doc-biblioentry">
+Haupt, R., Kloyer, M., &amp; Lange, M. (2007). Patent indicators for the technology life cycle development. <em>Research Policy</em>, <em>36</em>(3), 387–398. <a href="https://doi.org/10.1016/j.respol.2006.12.004">https://doi.org/10.1016/j.respol.2006.12.004</a>
+</div>
+<div id="ref-holsboer_muller-myhsok20a" class="csl-entry" role="doc-biblioentry">
+Holsboer, F., &amp; Müller-Myhsok, B. (2020). <em>Method for predicting a treatment response to a <span>CRHR</span>1 antagonist and/or a V1B antagonist in a patient with depressive and/or anxiety symptoms</em> (U.S. patent No. 10837062B2). <a href="https://patents.google.com/patent/US10837062B2/en?oq=US10837062B2">https://patents.google.com/patent/US10837062B2/en?oq=US10837062B2</a>
+</div>
+<div id="ref-jelodar_etal19" class="csl-entry" role="doc-biblioentry">
+Jelodar, H., Wang, Y., Yuan, C., Feng, X., Jiang, X., Li, Y., &amp; Zhao, L. (2019). Latent dirichlet allocation (<span>LDA</span>) and topic modeling: Models, applications, a survey. <em>Multimedia Tools and Applications</em>, <em>78</em>(11), 15169–15211. <a href="https://doi.org/10.1007/s11042-018-6894-4">https://doi.org/10.1007/s11042-018-6894-4</a>
+</div>
+<div id="ref-jin-pyeong_lee19" class="csl-entry" role="doc-biblioentry">
+Jin-pyeong, J., &amp; Lee, J. J. (2019). <em>Method and apparatus for predicting persistent hemodynamic depression using artificial neural network</em> (Patent No. <span>KR</span>2009840B1). <a href="https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=KR2009840B120190812&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false">https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=KR2009840B120190812&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false</a>
+</div>
+<div id="ref-joo_etal22" class="csl-entry" role="doc-biblioentry">
+Joo, K., Lee, M., &amp; Lee, G. (2022). Technology originality and convergence analysis in the wind power field using patents. <em>Energies</em>, <em>15</em>(9), 3316. <a href="https://doi.org/10.3390/en15093316">https://doi.org/10.3390/en15093316</a>
+</div>
+<div id="ref-kamariah_etal11" class="csl-entry" role="doc-biblioentry">
+Kamariah, I., Wan, Z. W. O., &amp; Izaidin, A. M. (2011). The commercialisation process of patents by universities. <em>African Journal of Business Management</em>, <em>5</em>(17), 7198–7208. <a href="https://doi.org/10.5897/AJBM09.255">https://doi.org/10.5897/AJBM09.255</a>
+</div>
+<div id="ref-kang_etal15c" class="csl-entry" role="doc-biblioentry">
+Kang, J. H., Kim, J. C., Lee, J. H., Park, S. S., &amp; Jang, D. S. (2015). A patent trend analysis for technological convergence of <span>IoT</span> and wearables. <em>Journal of the Korean Institute of Intelligent Systems</em>, <em>25</em>(3), 306–311. <a href="https://doi.org/10.5391/JKIIS.2015.25.3.306">https://doi.org/10.5391/JKIIS.2015.25.3.306</a>
+</div>
+<div id="ref-kang_etal20" class="csl-entry" role="doc-biblioentry">
+Kang, J. W., Choi, Y. H., Lee, J. H., Jeon, M. J., &amp; Chang, B. R. (2020). <em>Antidepressant recommendation method and system</em> (Patent No. <span>WO</span>2020091375A2). <a href="https://patents.google.com/patent/WO2020091375A2/en?oq=WO2020091375A2">https://patents.google.com/patent/WO2020091375A2/en?oq=WO2020091375A2</a>
+</div>
+<div id="ref-karam_etal17" class="csl-entry" role="doc-biblioentry">
+Karam, Z. N., Baveja, S. S., Mcinnis, M., &amp; Provost, E. M. (2017). <em>Mood monitoring of bipolar disorder using speech analysis</em> (U.S. patent No. 9685174B2). <a href="https://patents.google.com/patent/US9685174B2/en?oq=US9685174B2US9685174B2">https://patents.google.com/patent/US9685174B2/en?oq=US9685174B2US9685174B2</a>
+</div>
+<div id="ref-kendler16" class="csl-entry" role="doc-biblioentry">
+Kendler, K. S. (2016). The nature of psychiatric disorders. <em>World Psychiatry</em>, <em>15</em>(1), 5–12. <a href="https://doi.org/10.1002/wps.20292">https://doi.org/10.1002/wps.20292</a>
+</div>
+<div id="ref-kenyon_etal18" class="csl-entry" role="doc-biblioentry">
+Kenyon, M., Payne-Rogers, C., &amp; Jones, J. (2018). <em>Alertness prediction system and method</em> (Patent No. <span>CN</span>108697391A). <a href="https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=CN108697391A_20181023&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false">https://www.derwentinnovation.com/tip-innovation/recordView.do?hideHighlightPanel=true&amp;idType=uid/recordid&amp;datasource=T3&amp;databaseIds=PATENT&amp;category=PAT&amp;recordKeys=CN108697391A_20181023&amp;TYPE=RECORDVIEW&amp;fromExternalLink=true&amp;fromLocation=external&amp;isDAJImageAllowed=false</a>
+</div>
+<div id="ref-kim_kim12" class="csl-entry" role="doc-biblioentry">
+Kim, M.-S., &amp; Kim, C. (2012). On a patent analysis method for technological convergence. <em>Procedia - Social and Behavioral Sciences</em>, <em>40</em>, 657–663. <a href="https://doi.org/10.1016/j.sbspro.2012.03.245">https://doi.org/10.1016/j.sbspro.2012.03.245</a>
+</div>
+<div id="ref-kohn_etal21" class="csl-entry" role="doc-biblioentry">
+Kohn, K. I., Inwald, D., &amp; Brown, C. J. (2021). <em>Application for tracking progression and isolating causes of adverse medical conditions</em> (Patent No. <span>WO</span>2021034677A1). <a href="https://patents.google.com/patent/WO2021034677A1/en?oq=WO2021034677A1">https://patents.google.com/patent/WO2021034677A1/en?oq=WO2021034677A1</a>
+</div>
+<div id="ref-komogortsev21a" class="csl-entry" role="doc-biblioentry">
+Komogortsev, O. V. (2021). <em>Health assessment via eye movement biometrics</em> (U.S. patent No. 10966605B2). <a href="https://patents.google.com/patent/US10966605B2/en?oq=US10966605B2">https://patents.google.com/patent/US10966605B2/en?oq=US10966605B2</a>
+</div>
+<div id="ref-kulkarni_krenn21" class="csl-entry" role="doc-biblioentry">
+Kulkarni, P., &amp; Krenn, W. (2021). <em>Techniques for treating mental health disorders using digital therapeutics</em> (Patent No. <span>WO</span>2021214554A1). <a href="https://patents.google.com/patent/WO2021214554A1/en?oq=WO2021214554A1">https://patents.google.com/patent/WO2021214554A1/en?oq=WO2021214554A1</a>
+</div>
+<div id="ref-lin_etal20e" class="csl-entry" role="doc-biblioentry">
+Lin, E., Lin, C.-H., &amp; Lane, H.-Y. (2020). Precision psychiatry applications with pharmacogenomics: Artificial intelligence and machine learning approaches. <em>International Journal of Molecular Sciences</em>, <em>21</em>(3), 969. <a href="https://doi.org/10.3390/ijms21030969">https://doi.org/10.3390/ijms21030969</a>
+</div>
+<div id="ref-liu_etal22t" class="csl-entry" role="doc-biblioentry">
+Liu, Y., Mellem, M. S., Ahammad, P., Gonzales Cabezas, H. A., &amp; Kollada, M. (2022). <em>System and method for identifying transdiagnostic features shared across mental health disorders</em> (U.S. patent No. 11244762B2). <a href="https://patents.google.com/patent/US11244762B2/en?oq=US11244762B2">https://patents.google.com/patent/US11244762B2/en?oq=US11244762B2</a>
+</div>
+<div id="ref-lutz_etal22" class="csl-entry" role="doc-biblioentry">
+Lutz, W., Deisenhofer, A.-K., Rubel, J., Bennemann, B., Giesemann, J., Poster, K., &amp; Schwartz, B. (2022). Prospective evaluation of a clinical decision support system in psychological therapy. <em>Journal of Consulting and Clinical Psychology</em>, <em>90</em>(1), 90–106. <a href="https://doi.org/10.1037/ccp0000642">https://doi.org/10.1037/ccp0000642</a>
+</div>
+<div id="ref-lyoo_etal21" class="csl-entry" role="doc-biblioentry">
+Lyoo, I. K., Cho, H. B., &amp; Hong, G. H. (2021). <em>Method and apparatus for predicting posttraumatic behavior problem</em> (U.S. patent No. 20210113144A1). <a href="https://patents.google.com/patent/US20210113144A1/en?oq=US20210113144A1">https://patents.google.com/patent/US20210113144A1/en?oq=US20210113144A1</a>
+</div>
+<div id="ref-marco_etal19" class="csl-entry" role="doc-biblioentry">
+Marco, A. C., Sarnoff, J. D., &amp; deGrazia, C. A. W. (2019). Patent claims and patent scope. <em>Research Policy</em>, <em>48</em>(9), 103790. <a href="https://doi.org/10.1016/j.respol.2019.04.014">https://doi.org/10.1016/j.respol.2019.04.014</a>
+</div>
+<div id="ref-researchandmarkets22a" class="csl-entry" role="doc-biblioentry">
+Markets, R. {and}. (2022). <em>Mental health software - global market trajectory &amp; analytics</em>. <a href="https://www.researchandmarkets.com/reports/5140364/mental-health-software-global-market-trajectory">https://www.researchandmarkets.com/reports/5140364/mental-health-software-global-market-trajectory</a>
+</div>
+<div id="ref-mason21a" class="csl-entry" role="doc-biblioentry">
+Mason, S. (2021). <em>Method and system for describing and recommending optimal treatment plans in adaptive telemedical or other contexts</em> (U.S. patent No. 11107591B1). <a href="https://patents.google.com/patent/US11107591B1/en?oq=US11107591B1">https://patents.google.com/patent/US11107591B1/en?oq=US11107591B1</a>
+</div>
+<div id="ref-mason_etal22a" class="csl-entry" role="doc-biblioentry">
+Mason, S., Posnack, D., Arn, P., Para, W., Hacking, S. A., Mueller, M., GUANERI, J., &amp; Greene, J. (2022). <em>Remote examination through augmented reality</em> (U.S. patent No. 11284797B2). <a href="https://patents.google.com/patent/US11284797B2/en?oq=US11284797B2">https://patents.google.com/patent/US11284797B2/en?oq=US11284797B2</a>
+</div>
+<div id="ref-mcguffin_etal04" class="csl-entry" role="doc-biblioentry">
+McGuffin, P., Owen, M. J., &amp; Gottesman, I. I. (2004). <em>Psychiatric genetics and genomics</em>. <span>OUP</span> Oxford.
+</div>
+<div id="ref-mimno_etal11" class="csl-entry" role="doc-biblioentry">
+Mimno, D., Wallach, H., Talley, E., Leenders, M., &amp; McCallum, A. (2011). Optimizing semantic coherence in topic models. <em>Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing</em>, 262–272. <a href="https://aclanthology.org/D11-1024">https://aclanthology.org/D11-1024</a>
+</div>
+<div id="ref-moher_etal09" class="csl-entry" role="doc-biblioentry">
+Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G. (2009). Preferred reporting items for systematic reviews and meta-analyses: The <span>PRISMA</span> statement. <em><span>BMJ</span></em>, <em>339</em>, b2535. <a href="https://doi.org/10.1136/bmj.b2535">https://doi.org/10.1136/bmj.b2535</a>
+</div>
+<div id="ref-moturu_madan18a" class="csl-entry" role="doc-biblioentry">
+Moturu, S., &amp; Madan, A. (2018). <em>Method and system for improving care determination</em> (U.S. patent No. 10014077B2). <a href="https://patents.google.com/patent/US10014077B2/en?oq=US10014077B2">https://patents.google.com/patent/US10014077B2/en?oq=US10014077B2</a>
+</div>
+<div id="ref-muller-myhsok_etal15" class="csl-entry" role="doc-biblioentry">
+Müller-Myhsok, B., Binder, E., &amp; Holsboer, F. (2015). <em>Genetic predictors of response to treatment with crhr1 antagonists</em> (U.S. patent No. 20150278438A1). <a href="https://patents.google.com/patent/US20150278438A1/en?oq=US20150278438A1">https://patents.google.com/patent/US20150278438A1/en?oq=US20150278438A1</a>
+</div>
+<div id="ref-neumann20a" class="csl-entry" role="doc-biblioentry">
+Neumann, K. (2020). <em>Artificial intelligence advisory systems and methods for vibrant constitutional guidance</em> (U.S. patent No. 20200320363A1). <a href="https://patents.google.com/patent/US20200320363A1/en?oq=US20200320363A1">https://patents.google.com/patent/US20200320363A1/en?oq=US20200320363A1</a>
+</div>
+<div id="ref-newson_etal20" class="csl-entry" role="doc-biblioentry">
+Newson, J. J., Hunter, D., &amp; Thiagarajan, T. C. (2020). The heterogeneity of mental health assessment. <em>Frontiers in Psychiatry</em>, <em>11</em>. <a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00076">https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00076</a>
+</div>
+<div id="ref-nguyen_moehrle21" class="csl-entry" role="doc-biblioentry">
+Nguyen, N. U. P., &amp; Moehrle, M. (2021). Combining the analysis of vertical and horizontal technology convergence: Insights from the case of urban innovation. <em><span>IEEE</span> Transactions on Engineering Management</em>, <em><span>PP</span></em>, 1–14. <a href="https://doi.org/10.1109/TEM.2021.3086320">https://doi.org/10.1109/TEM.2021.3086320</a>
+</div>
+<div id="ref-no_park10" class="csl-entry" role="doc-biblioentry">
+No, H. J., &amp; Park, Y. (2010). Trajectory patterns of technology fusion: Trend analysis and taxonomical grouping in nanobiotechnology. <em>Technological Forecasting and Social Change</em>, <em>77</em>(1), 63–75. <a href="https://doi.org/10.1016/j.techfore.2009.06.006">https://doi.org/10.1016/j.techfore.2009.06.006</a>
+</div>
+<div id="ref-passos_etal22" class="csl-entry" role="doc-biblioentry">
+Passos, I. C., Ballester, P., Rabelo-da-Ponte, F. D., &amp; Kapczinski, F. (2022). Precision psychiatry: The future is now. <em>The Canadian Journal of Psychiatry</em>, <em>67</em>(1), 21–25. <a href="https://doi.org/10.1177/0706743721998044">https://doi.org/10.1177/0706743721998044</a>
+</div>
+<div id="ref-perez_etal19c" class="csl-entry" role="doc-biblioentry">
+Perez, R. E., Hong, P. I., Diianni, S., Malave, L. J., &amp; Stengel, B. (2019). <em>Systems and methods for using transcutaneous electrical stimulation to enable dietary interventions</em> (U.S. patent No. 10335302B2). <a href="https://patents.google.com/patent/US10335302B2/en?oq=US10335302B2">https://patents.google.com/patent/US10335302B2/en?oq=US10335302B2</a>
+</div>
+<div id="ref-pesapane_etal18" class="csl-entry" role="doc-biblioentry">
+Pesapane, F., Volonté, C., Codari, M., &amp; Sardanelli, F. (2018). Artificial intelligence as a medical device in radiology: Ethical and regulatory issues in europe and the united states. <em>Insights into Imaging</em>, <em>9</em>(5), 745–753. <a href="https://doi.org/10.1007/s13244-018-0645-y">https://doi.org/10.1007/s13244-018-0645-y</a>
+</div>
+<div id="ref-probst_etal21" class="csl-entry" role="doc-biblioentry">
+Probst, B., Touboul, S., Glachant, M., &amp; Dechezleprêtre, A. (2021). Global trends in the invention and diffusion of climate change mitigation technologies. <em>Nature Energy</em>, <em>6</em>(11), 1077–1086. <a href="https://doi.org/10.1038/s41560-021-00931-5">https://doi.org/10.1038/s41560-021-00931-5</a>
+</div>
+<div id="ref-rcoreteam22b" class="csl-entry" role="doc-biblioentry">
+R Core Team. (2022). <em>R: A language and environment for statistical computing</em> [Manual]. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+</div>
+<div id="ref-roberts_etal19" class="csl-entry" role="doc-biblioentry">
+Roberts, M. E., Stewart, B. M., &amp; Tingley, D. (2019). Stm: An r package for structural topic models. <em>Journal of Statistical Software</em>, <em>91</em>(2), 1–40. <a href="https://doi.org/10.18637/jss.v091.i02">https://doi.org/10.18637/jss.v091.i02</a>
+</div>
+<div id="ref-rosenfeld_etal19" class="csl-entry" role="doc-biblioentry">
+Rosenfeld, A., Benrimoh, D., Armstrong, C., Mirchi, N., Langlois-Therrien, T., Rollins, C., Tanguay-Sela, M., Mehltretter, J., Fratila, R., Israel, S., Snook, E., Perlman, K., Kleinerman, A., Saab, B., Thoburn, M., Gabbay, C., &amp; Yaniv-Rosenfeld, A. (2019). <em>Big data analytics and <span>AI</span> in mental healthcare</em> (No. <span>arXiv</span>:1903.12071). <span>arXiv</span>. <a href="http://arxiv.org/abs/1903.12071">http://arxiv.org/abs/1903.12071</a>
+</div>
+<div id="ref-rush_etal06" class="csl-entry" role="doc-biblioentry">
+Rush, A. J., Trivedi, M. H., Wisniewski, S. R., Nierenberg, A. A., Stewart, J. W., Warden, D., Niederehe, G., Thase, M. E., Lavori, P. W., Lebowitz, B. D., McGrath, P. J., Rosenbaum, J. F., Sackeim, H. A., Kupfer, D. J., Luther, J., &amp; Fava, M. (2006). Acute and longer-term outcomes in depressed outpatients requiring one or several treatment steps: A <span>STAR</span>*d report. <em>American Journal of Psychiatry</em>, <em>163</em>(11), 1905–1917. <a href="https://doi.org/10.1176/ajp.2006.163.11.1905">https://doi.org/10.1176/ajp.2006.163.11.1905</a>
+</div>
+<div id="ref-saito22a" class="csl-entry" role="doc-biblioentry">
+Saito, S. (2022). <em>Methods and systems of extended reality environment interaction based on eye motions</em> (U.S. patent No. 11392198B2). <a href="https://patents.google.com/patent/US11392198B2/en?oq=US11392198B2">https://patents.google.com/patent/US11392198B2/en?oq=US11392198B2</a>
+</div>
+<div id="ref-salazardepablo_etal21" class="csl-entry" role="doc-biblioentry">
+Salazar de Pablo, G., Studerus, E., Vaquerizo-Serrano, J., Irving, J., Catalan, A., Oliver, D., Baldwin, H., Danese, A., Fazel, S., Steyerberg, E. W., Stahl, D., &amp; Fusar-Poli, P. (2021). Implementing precision psychiatry: A systematic review of individualized prediction models for clinical practice. <em>Schizophrenia Bulletin</em>, <em>47</em>(2), 284–297. <a href="https://doi.org/10.1093/schbul/sbaa120">https://doi.org/10.1093/schbul/sbaa120</a>
+</div>
+<div id="ref-schloerke_etal21" class="csl-entry" role="doc-biblioentry">
+Schloerke, B., Cook, D., Larmarange, J., Briatte, F., Marbach, M., Thoen, E., Elberg, A., &amp; Crowley, J. (2021). <em><span>GGally</span>: Extension to ’ggplot2’</em>. <a href="https://CRAN.R-project.org/package=GGally">https://CRAN.R-project.org/package=GGally</a>
+</div>
+<div id="ref-siekmeier_etal22a" class="csl-entry" role="doc-biblioentry">
+Siekmeier, P. J., Lowen, S. B., &amp; Coyle, J. T. (2022). <em>Method of increasing cognitive function with glutamate receptor agonist</em> (U.S. patent No. 20220313170A1). <a href="https://patents.google.com/patent/US20220313170A1/en?oq=US20220313170A1">https://patents.google.com/patent/US20220313170A1/en?oq=US20220313170A1</a>
+</div>
+<div id="ref-su_etal20" class="csl-entry" role="doc-biblioentry">
+Su, C., Xu, Z., Pathak, J., &amp; Wang, F. (2020). Deep learning in mental health outcome research: A scoping review. <em>Translational Psychiatry</em>, <em>10</em>(1), 116. <a href="https://doi.org/10.1038/s41398-020-0780-3">https://doi.org/10.1038/s41398-020-0780-3</a>
+</div>
+<div id="ref-szulczewska-remi_nowak-mizgalska21" class="csl-entry" role="doc-biblioentry">
+Szulczewska-Remi, A., &amp; Nowak-Mizgalska, H. (2021). Who really acts as an entrepreneur in the science commercialisation process: The role of knowledge transfer intermediary organisations. <em>Journal of Entrepreneurship in Emerging Economies</em>. <a href="https://doi.org/10.1108/JEEE-09-2020-0334">https://doi.org/10.1108/JEEE-09-2020-0334</a>
+</div>
+<div id="ref-taddy12" class="csl-entry" role="doc-biblioentry">
+Taddy, M. (2012). On estimation and selection for topic models. <em>Proceedings of the Fifteenth International Conference on Artificial Intelligence and Statistics</em>, 1184–1193. <a href="https://proceedings.mlr.press/v22/taddy12.html">https://proceedings.mlr.press/v22/taddy12.html</a>
+</div>
+<div id="ref-torrance_west17" class="csl-entry" role="doc-biblioentry">
+Torrance, A. W., &amp; West, J. D. (2017). All patents great and small: A big data network approach to valuation. <em>Virginia Journal of Law and Technology</em>, <em>20</em>(3), 468–504.
+</div>
+<div id="ref-trappey_etal11" class="csl-entry" role="doc-biblioentry">
+Trappey, C. V., Wu, H.-Y., Taghaboni-Dutta, F., &amp; Trappey, A. J. C. (2011). Using patent data for technology forecasting: China <span>RFID</span> patent analysis. <em>Advanced Engineering Informatics</em>, <em>25</em>(1), 53–64. <a href="https://doi.org/10.1016/j.aei.2010.05.007">https://doi.org/10.1016/j.aei.2010.05.007</a>
+</div>
+<div id="ref-vayrynen_kortelainen22" class="csl-entry" role="doc-biblioentry">
+Väyrynen, E., &amp; Kortelainen, J. (2022). <em>Apparatus and method for electroencephalographic measurement</em> (U.S. patent No. 11406316B2). <a href="https://patents.google.com/patent/US11406316B2/en?oq=US11406316B2">https://patents.google.com/patent/US11406316B2/en?oq=US11406316B2</a>
+</div>
+<div id="ref-wall16" class="csl-entry" role="doc-biblioentry">
+Wall, D. (2016). <em>Enhancing diagnosis of disorder through artificial intelligence and mobile health technologies without compromising accuracy</em> (U.S. patent No. 9443205B2). <a href="https://patents.google.com/patent/US9443205B2/en?oq=US9443205B2">https://patents.google.com/patent/US9443205B2/en?oq=US9443205B2</a>
+</div>
+<div id="ref-wallach_etal09" class="csl-entry" role="doc-biblioentry">
+Wallach, H. M., Murray, I., Salakhutdinov, R., &amp; Mimno, D. (2009). Evaluation methods for topic models. <em>Proceedings of the 26th Annual International Conference on Machine Learning</em>, 1105–1112. <a href="https://doi.org/10.1145/1553374.1553515">https://doi.org/10.1145/1553374.1553515</a>
+</div>
+<div id="ref-wickham16" class="csl-entry" role="doc-biblioentry">
+Wickham, H. (2016). <em>ggplot2: Elegant graphics for data analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>
+</div>
+<div id="ref-williams19a" class="csl-entry" role="doc-biblioentry">
+Williams, D. H. (2019). <em>Systems and methods of using wireless location, context, and/or one or more communication networks for monitoring for, preempting, and/or mitigating pre-identified behavior</em> (U.S. patent No. 10477342B2). <a href="https://patents.google.com/patent/US10477342B2/en?oq=US10477342B2">https://patents.google.com/patent/US10477342B2/en?oq=US10477342B2</a>
+</div>
+<div id="ref-witteveen_etal22" class="csl-entry" role="doc-biblioentry">
+Witteveen, A. B., Young, S., Cuijpers, P., Ayuso-Mateos, J. L., Barbui, C., Bertolini, F., Cabello, M., Cadorin, C., Downes, N., Franzoi, D., Gasior, M., John, A., Melchior, M., McDaid, D., Palantza, C., Purgato, M., Van der Waerden, J., Wang, S., &amp; Sijbrandij, M. (2022). Remote mental health care interventions during the <span>COVID</span>-19 pandemic: An umbrella review. <em>Behaviour Research and Therapy</em>, <em>159</em>, 104226. <a href="https://doi.org/10.1016/j.brat.2022.104226">https://doi.org/10.1016/j.brat.2022.104226</a>
+</div>
+<div id="ref-yahata_etal16" class="csl-entry" role="doc-biblioentry">
+Yahata, N., Morimoto, J., Hashimoto, R., Lisi, G., Shibata, K., Kawakubo, Y., Kuwabara, H., Kuroda, M., Yamada, T., Megumi, F., Imamizu, H., Náñez Sr, J. E., Takahashi, H., Okamoto, Y., Kasai, K., Kato, N., Sasaki, Y., Watanabe, T., &amp; Kawato, M. (2016). A small number of abnormal brain connections predicts adult autism spectrum disorder. <em>Nature Communications</em>, <em>7</em>(1), 11254. <a href="https://doi.org/10.1038/ncomms11254">https://doi.org/10.1038/ncomms11254</a>
+</div>
+<div id="ref-yoon_etal17" class="csl-entry" role="doc-biblioentry">
+Yoon, J., Seo, W., Coh, B.-Y., Song, I., &amp; Lee, J.-M. (2017). Identifying product opportunities using collaborative filtering-based patent analysis. <em>Computers &amp; Industrial Engineering</em>, <em>107</em>, 376–387. <a href="https://doi.org/10.1016/j.cie.2016.04.009">https://doi.org/10.1016/j.cie.2016.04.009</a>
+</div>
+<div id="ref-zanardi_etal21" class="csl-entry" role="doc-biblioentry">
+Zanardi, R., Prestifilippo, D., Fabbri, C., Colombo, C., Maron, E., &amp; Serretti, A. (2021). Precision psychiatry in clinical practice. <em>International Journal of Psychiatry in Clinical Practice</em>, <em>25</em>(1), 19–27. <a href="https://doi.org/10.1080/13651501.2020.1809680">https://doi.org/10.1080/13651501.2020.1809680</a>
+</div>
+<div id="ref-zha_chen10" class="csl-entry" role="doc-biblioentry">
+Zha, X., &amp; Chen, M. (2010). Study on early warning of competitive technical intelligence based on the patent map. <em>Journal of Computers</em>, <em>5</em>(2), 274–281. <a href="https://doi.org/10.4304/jcp.5.2.274-281">https://doi.org/10.4304/jcp.5.2.274-281</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Patent claims define the extent of the protection conferred by a patent. They aim to determine which subject-matter is protected by the patent; <span class="citation" data-cites="marco_etal19">Marco et al. (<a href="#ref-marco_etal19" role="doc-biblioref">2019</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A patent family is a collection of patent applications covering the same or similar technical content.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

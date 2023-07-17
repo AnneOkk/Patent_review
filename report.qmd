@@ -1,0 +1,1314 @@
+---
+title: "Advancing Mental Health Care with AI-Enabled Precision Psychiatry Tools: A Patent Review"
+author: "Anne-Kathrin Kleine, Eva Lermer, Julia Cecil, Anna Heinrich & Susanne Gaube"
+bibliography: "config/Patent_review.bib"
+keywords: "precision psychiatry, patent review, artificial intelligence, mental health"
+csl: "config/apa.csl"
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: true
+  include: false
+crossref:
+  fig-title: '**Figure**'
+  fig-labels: arabic
+  title-delim: " "
+format: 
+  html:
+    code-overflow: wrap
+    smooth-scroll: false
+    toc: true
+    toc-depth: 4
+---
+
+# Abstract 
+
+The review provides an overview of patents on AI-enabled precision psychiatry tools published between 2015 and mid-October 2022. Multiple analytic approaches, such as graphic network analysis and topic modeling, are used to analyze the scope, content, and trends of the retained patents. The included tools aim to provide accurate diagnoses according to established psychometric criteria, predict the response to specific treatment approaches, suggest optimal treatments, and make prognoses regarding disorder courses without intervention. About one-third of the tools recommend treatment options or include treatment administration related to digital therapeutics, pharmacotherapy, and electrotherapy. Data sources used to make predictions include behavioral data collected through mobile devices, neuroimaging, and electronic health records. The complexity of technology combinations used in the included devices has increased until 2021. The topics extracted from the patent data illuminate current trends and potential future developments in AI-enabled precision psychiatry. The most impactful patents and associated available products reveal relevant commercialization possibilities and likely future developments. Overall, the review highlights the potential of adopting AI-enabled precision psychiatry tools in practice.
+
+# Introduction
+
+The lack of understanding of the pathophysiology of mental disorders contributes to the difficulty of treating them. Symptoms can be shared between multiple disorders, and the intensity or presence of these symptoms can differ dramatically between people that fall within the same diagnostic category [@fernandes_etal17; @kendler16; @newson_etal20]. As a result, people with mental health issues may go through months or even years of treatment before receiving the right medication or suitable psychotherapy [@bzdok_meyer-lindenberg18]. These changes in treatment plans or ineffective treatment can have a negative effect on the patient's quality of life and can lead to high healthcare costs [@zanardi_etal21].
+
+Precision psychiatry may offer remedies against the prevalent trial-and-error approach in mental healthcare. Similar to precision medicine, precision psychiatry considers individual variability in biological, environmental, and lifestyle factors to make appropriate treatment recommendations [@fernandes_etal17; @salazardepablo_etal21].
+Rather than concentrating on creating new treatments that are successful for most patients, precision psychiatry focuses on the exact choice of an effective treatment for one patient or a small group of patients [@rush_etal06; @bzdok_meyer-lindenberg18; @fernandes_etal17]. For example, a particular antidepressant may be more effective in one patient than another, even if both suffer from major depressive disorder [@chekroud_etal16], and certain psychotherapeutic treatment strategies may be more or less effective for different patients [@lutz_etal22]. Precision psychiatry utilizes data from multiple sources (e.g., brain imaging, health records, demographic data, or self-reported experience) to gain an understanding of complex illness mechanisms and provide effective treatment options [@fernandes_etal17; @salazardepablo_etal21]. Precision psychiatry is a tool that can be used to identify mental conditions (diagnostic approach), anticipate the potential onset of a condition in the future (prognostic approach), and forecast the response to a treatment plan (treatment prediction approach) at the individual level [@salazardepablo_etal21; @lin_etal20e].
+
+Artificial Intelligence (AI) through Machine Learning (ML) can be particularly effective in deriving predictions at the individual level [@bzdok_meyer-lindenberg18]. ML algorithms can be used to identify intricate patterns in observational data to accurately make quantitative (e.g., symptom severity) and categorical (e.g., disorder subgroups) predictions in clinical settings. This typically involves a three-step procedure: a) training the algorithm on a data set, b) refining it until its predictions are satisfactory, and c) utilizing the gleaned insights to make predictions for new data or future events [@bzdok_meyer-lindenberg18; @dwyer_etal18].
+In recent years, researchers have been dedicating significant attention to the development of highly accurate ML-generated predictions in precision psychiatry. For example, @yahata_etal16 identified a small number of functional connections from brain imaging data that can differentiate typically developed people from those with autism, with their model achieving an 85% accuracy rate when tested on an independent sample. Similarly, @drysdale_etal17 used functional images from patients with mental illness to cluster them into four neurophysiological depression subtypes, which were determined by distinct patterns of dysfunctional connectivity in neural networks. Their classification model achieved an 86% accuracy. Additionally, the authors demonstrated that the identified subtypes were linked to different clinical symptoms and different levels of responsiveness to electrotherapy.
+
+Despite this, the use of AI in mental healthcare remains in its infancy. Until 2020, only two AI-enabled applications have been approved by the US Food and Drug Administration (FDA) for use in psychiatry [@benjamens_etal20]. Nonetheless, the global market for mental health software is anticipated to rise remarkably until 2027. The major factors contributing to this growth include increasing incidences of mental health conditions and technological advancements [@researchandmarkets22a]. These predicted market developments demonstrate the future potential of AI-based precision psychiatry technologies. Patents can provide up to 80% of the latest technological information about a particular area that scientific evidence alone cannot uncover [@caviggioli16; @curran_etal10]. In addition, patent information can be used to anticipate the application of technology in the next five to ten years [@zha_chen10; @trappey_etal11; @erzurumlu_pachamanova20]. Patents represent the result of a company's investment of time and resources in research and development (R&D) and the transfer of intellectual assets from academic institutions. After the patenting phase, technologies can be licensed and sold commercially [@harryson08; @kamariah_etal11; @szulczewska-remi_nowak-mizgalska21]. The existing evidence on the benefits of AI for precision psychiatry does not consider factors relevant for market adoption [e.g., @bzdok_meyer-lindenberg18; @passos_etal22; @salazardepablo_etal21; @zanardi_etal21]. Accordingly, there is a considerable knowledge gap regarding the scope of technologies that do not remain as research projects at universities and knowledge institutions but enter the commercialization process. Since many researched ideas and technologies will never be commercialized, patents are an essential alternative source of knowledge on technological progress [@yoon_etal17].
+
+The current patent analysis sheds light on the content, scope, and recent developments in AI-enabled precision psychiatry technologies. First, we present descriptive information on the targeted disorders, the type of prediction modeling applied (i.e., diagnostic, treatment prediction, prognostic approach), treatment recommendations, the data sources provided in the patent titles, abstracts, claims^[Patent claims define the extent of the protection conferred by a patent. They aim to determine which subject-matter is protected by the patent; @marco_etal19], and descriptions, and information on the regional distribution of patents. Second, we examine Cooperative Patent Classification (CPC) code trends to identify emerging technology combinations. CPC codes contain details on core invention contents and technical elements. More than one CPC code can be assigned to one patent, and combining two or more CPC codes indicates technology convergence. Technology convergence is associated with opportunities for economic growth and innovation but also with threats of facing competitors in fields outside the own expert domain. Technology convergence analysis facilitates a precise understanding of the evolution of new technologies, the increasing complexity of inventions, and associated strategies for dealing with opportunities and threats [@kim_kim12]. Third, we apply topic modeling to the patents' claims to gain insight into the patents' content, scope, and mechanisms of technology convergence beyond the information contained in patent metadata, such as CPC codes [@choi_song18]. Finally, we present information on the most impactful patents per year, including commercialization efforts.  
+
+One of the major obstacles to adopting AI-enabled tools in mental healthcare is the lack of awareness of the products available and a poor understanding of their operating mechanisms [@aafjes-vandoorn_etal21; @chekroud_etal21]. The insight gained through the patent review can raise awareness of technologies that will likely enter the market in the coming years. It should support mental health practitioners, healthcare providers, and training centers to understand the scope, focus, and functionality of AI-enabled precision psychiatry tools and to develop strategies to facilitate their adoption. In addition, information on the commercial viability and predicted future developments of patents may be valuable for calibrating research efforts in R&D centers [@baglieri_cesaroni13; @erzurumlu_pachamanova20].
+
+
+# Materials and methods
+
+## Database search
+
+```{r read_data}
+## Read in data
+library("readxl")
+library(tidyverse)
+data <- read_excel("data/2023-03-10_exported.xlsx", sheet = "Sheet1")
+source("R/custom-functions.R")
+```
+
+
+We conducted a patent search using the Derwent Innovation (DI) database and its smart search function. The smart search function semantically analyzes word strings and automatically expands the keywords to include other related relevant terms. We searched for patents related to precision psychiatry [@salazardepablo_etal21], artificial intelligence, and mental disorders. Specifically, our search terms were ("risk prediction" OR predictive OR prognostic OR diagnostic) AND ("artificial intelligence" OR "machine learning") AND (psychiatrist OR psychotherapist OR "mental health" OR "mental illness"). The search was limited to patents published between January 1st 2015 and October 20th 2022.  
+
+A search using the Derwent World Patents Index (DWPI) yielded 19,399 patent families. To limit the results to patents related to mental health, a follow-up search was conducted which included keywords related to mental disorders as defined in the Diagnostic and Statistical Manual of Mental Disorders 5th Edition – Text Revision (DSM-V-TR) manual [@Diagnostic22] in the patent title or abstract. The complete search term is displayed in the Online Appendix (https://osf.io/gzy9r/?view_only=e0ee985e9b874cff8b85674bec8be8f6). This search yielded `r nrow(data)` relevant DWPI patent families (henceforth called "patents"^[A patent family is a collection of patent applications covering the same or similar technical content.]).
+
+
+## Patent coding and inclusion criteria 
+
+The present study was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses [PRISMA, @moher_etal09]. A PRISMA flow diagram of the is presented in the Online Appendix (Fig. A). The titles, abstracts, and claims of all patents were investigated to identify those that satisfied the inclusion criteria. AK, JC, and AH further characterized the patents according to the targeted disorder (e.g., depression), the type of prediction model (i.e., diagnostic, treatment prediction, prognostic), and the treatment advice provided (e.g., pharmacotherapy). All codings were checked by AK and any discrepancies were addressed in weekly calibration meetings.
+
+
+```{r}
+table(data$`Include/exclude`)
+data$`Include/exclude` <- sub("^Eclude*", "Exclude", data$`Include/exclude`)
+data$`Include/exclude` <- sub("^Ecxclude*", "Exclude", data$`Include/exclude`)
+
+no_abstract <- nrow(data[data$`Include/exclude` == "NA", ])
+
+data <- data %>% drop_na(`Abstract - DWPI`) 
+
+found <- nrow(data[data$`Include/exclude` == "Include", ]) + nrow(data[data$`Include/exclude` == "Exclude", ]) + no_abstract
+found_other <- 0
+no_dupes <- found
+screened <- no_dupes
+screen_exclusions <- no_abstract
+full_text <- screened - screen_exclusions
+full_text_exclusions <- nrow(data[data$`Include/exclude` == "Exclude", ])
+qualitative <- nrow(data[data$`Include/exclude` == "Include", ])
+quantitative <- nrow(data[data$`Include/exclude` == "Include", ])
+
+not_MH <- table(data$`Reason exclude`)[3]
+not_disorder <- table(data$`Reason exclude`)[4]
+not_PP <- table(data$`Reason exclude`)[2]
+not_AI <- table(data$`Reason exclude`)[1]
+
+
+nrow(data[data$`Include/exclude` == "Include", ])
+nrow(data[data$`Include/exclude` == "Exclude", ])
+nrow(data[which(data$`Reason exclude` == "Not artificial intelligence"), ])
+data$Include_exclude <- data$`Include/exclude` 
+data$reason_exclude <- data$`Reason exclude`
+nrow(data[which(data$reason_exclude == "Not artificial intelligence"), ])
+
+table(data$reason_exclude, data$Include_exclude)
+table(data$Include_exclude)
+
+```
+
+```{r}
+library(PRISMAstatement)
+
+prisma <- prisma(found = found, 
+       found_other = found_other,
+       no_dupes = no_dupes,
+       screened = screened,
+       screen_exclusions = screen_exclusions,
+       full_text = full_text, 
+       full_text_exclusions = full_text_exclusions, 
+       qualitative = qualitative, 
+       quantitative = quantitative,
+       #extra_dupes_box = TRUE,
+       labels = 
+         list(found = paste0("Patents identified through \nDWPI patent database \n(n = ", found, ")"), 
+              found_other = paste0("Additional patents identified \nthrough other sources \n(n = ", found_other, ")"),
+              no_dupes = paste0("Patents after duplicates removed\n(n = ", no_dupes, ")"),
+              screened = paste0("Patents screened\n(n = ", screened, ")"),
+              screen_exclusions = paste0("Patents excluded based on screening \n(n = ", screen_exclusions, ")"),
+              full_text = paste0("Patents assessed\nfor eligibility\n(n = ", full_text, ")"),
+              full_text_exclusions = 
+                paste0("Patents excluded (n = ", full_text_exclusions, "), with reasons:", 
+                       
+                       "\n\nUnrelated to mental health (n = ", not_MH, ")", 
+                       "\nNot mental disorder (n = ", not_disorder, ")",
+                       "\nNot diagnostic, prognostic, or treatment prediction (n = ", not_PP, ")",
+                       "\nNot AI (n = ", not_AI, ")"),
+              
+              qualitative = paste0("Patents included in\nqualitative synthesis\n(n = ", qualitative, ")"),
+              quantitative = paste0("Patents included in\nquantitative synthesis\n(n = ", quantitative, ")")))
+
+```
+
+```{r}
+#| include: true
+prisma
+```
+
+
+We defined four inclusion criteria to determine whether patents should be retained for the review. First, we included patents if they reported on a tool in the mental health domain. This led to the exclusion of *n* = `r nrow(data[which(data$reason_exclude == "Not mental health"), ])` patents unrelated to mental health (e.g., @jin-pyeong_lee19 describe a tool that may be used to predict persistent hemodynamic depression). Second, we included patents of tools designed to make predictions about mental disorders, defined according to established psychometric criteria. This led to the exclusion of *n* = `r nrow(data[which(data$reason_exclude == "Target group not patients"), ])` patents (e.g., @kenyon_etal18 describe a tool that generates a fatigue score for an individual). Third, patents were included if they reported on a tool that could be used for diagnostic, prognostic, or treatment prediction purposes, leading to the exclusion of *n* = `r nrow(data[which(data$reason_exclude == "Not diagnostic, prognostic, predictive, or treatment"), ])` patents (e.g., @kohn_etal21 describe a tool that tracks mental health triggers, without providing diagnostic, treatment prediction, or prognostic information). Finally, patents were included if AI/ML technology was used to make predictions, leading to the exclusion of *n* = `r nrow(data[which(data$reason_exclude == "Not artificial intelligence"), ])` patents (e.g., @geigenmuller_etal20 identifies metabolic markers of attention deficit hyperactivity disorder). The final dataset used for analysis includes `r nrow(data[data$Include_exclude == "Include", ])` patents. 
+
+## Data analysis
+
+The data were analyzed using R [Version 4.2.2, @rcoreteam22b]. First, descriptive information on targeted disorders, prediction models, treatment recommendations, data sources, and regional distributions were generated using the *ggplot2* package [@wickham16]. Second, the *GGally* [@schloerke_etal21], *network* [@butts08; @butts15], *igraph* [@csardi_nepusz06], and *ggplot2* [@wickham16] packages were utilized to conduct a technology convergence analysis based on graphical networks depicting the connections between patent CPC codes over the years. CPC codes are ordered hierarchically, from sections describing the overall field of the technology to subgroups referring to technological details. Table 1 shows an example CPC hierarchy. CPC-based technology convergence analysis involves generating a matrix in which the columns and rows represent different CPC codes on the level of subclasses. Each matrix cell reports the count of patents connecting the two CPC codes. Subsequently, the matrix is transformed into network plots (one for each year) representing annual technology convergence patterns [@caviggioli16]. Past research has investigated technology convergence trends using similar approaches based on patent classification codes [@nguyen_moehrle21; @kang_etal15c; @joo_etal22]. Patent data provides unique insight into technology convergence because patent applications represent an accumulation of knowledge and advancement in a particular technological trajectory. The idea behind CPC-based technology convergence analysis is that linkages between technologies indicate two formerly distinct techniques moving towards unity to form novel products. The increasing complexity of merging fields sheds light on the likelihood of a new fusion in the coming years and highlights opportunities for combining expertise to create new assets [@caviggioli16]. 
+
+Third, structural topic modeling (STM) was applied to identify latent topics in the patent claims using the *stm* package [@roberts_etal19]. Topic modeling is a semantic-based text mining technique that can be used to create relationships between words and expressions [@jelodar_etal19; @dotsika_watkins17]. STM is advantageous compared to traditional Latent Dirichlet Allocation [LDA, @blei03] because it allows for the incorporation of metadata that explains topical prevalence and the estimation of the relationship between topics and covariates [@roberts_etal19]. The covariates considered were patent publication years, combined patent impact, and countries. Different tests were implemented to select the most appropriate number of topics [@roberts_etal19; @grimmer_stewart13; @wallach_etal09; @taddy12; @mimno_etal11;@erzurumlu_pachamanova20]. The final selection was based on the model's performance on these tests and its interpretability [@roberts_etal19; @erzurumlu_pachamanova20]. Finally, information on the most impactful patents each year was presented based on the combined patent impact index as an indicator of the commercial viability and the likelihood of patent enforcement [@allison_etal03]. [The data and code will be made available upon publication (https://osf.io/gzy9r/?view_only=e0ee985e9b874cff8b85674bec8be8f6)].
+
+# Results 
+
+```{r}
+# remove all rows that contain "exclude" in Include/exclude column
+data <- data[grepl("Include", data$`Include/exclude`),] 
+
+library(dplyr)
+library(stringr)
+data <- data %>% #make all first letter capital 
+    mutate(`Illness group` = str_to_title(`Illness group`))
+
+# groups of illnesses
+data$`Illness group` <- gsub("Adhd", "ADHD", data$`Illness group`)
+data$`Illness group` <- gsub("Sleep disorder", "Sleep-wake disorder", data$`Illness group`)
+data$`Illness group` <- gsub("Ptsd", "PTSD", data$`Illness group`)
+data$`Illness group` <- gsub("Ocd", "OCD", data$`Illness group`)
+data$`Illness group` <- gsub("Psychosis", "Schizophrenia", data$`Illness group`)
+data$`Illness group` <- gsub("Social Communication Disorder", "SCD", data$`Illness group`)
+data$`Illness group` <- gsub("Substance Use", "Addiction", data$`Illness group`)
+data$`Illness group` <- gsub("Ptbs", "PTSD", data$`Illness group`)
+data$`Illness group` <- gsub("Bipolar Disorders", "Bipolar", data$`Illness group`)
+data$`Illness group` <- gsub("Bipolar Disorders", "Bipolar", data$`Illness group`)
+data$`Illness group` <- gsub("Biploar Disorder", "Bipolar", data$`Illness group`)
+data$`Illness group` <- gsub("Psychotic Disorders", "Schizophrenia", data$`Illness group`)
+data$`Illness group` <- gsub("Suicide", "Suicidality", data$`Illness group`)
+data$`Illness group` <- gsub("Neurologic Disorders", "Unspecific", data$`Illness group`)
+data$`Illness group` <- gsub("Postpartum Depression", "Depression", data$`Illness group`)
+data$`Illness group` <- gsub("Erectile Dysfunction", "Sexual Dysfunction", data$`Illness group`)
+
+data$Data <- gsub("Mental health", "Clinical records", data$Data)
+data$Data <- gsub("Physical health", "Clinical records", data$Data)
+
+
+data$`Feedback type (in case of treatment/ predictive)` <- str_replace(data$`Feedback type (in case of treatment/ predictive)`, "Treatment,", "Precision treatment,")
+
+```
+
+```{r}
+library(tidyverse)
+library(mgsub)
+library(stringr)
+# create illness group strings
+illness_groups <- unlist(strsplit(data$`Illness group`, ",")) %>% str_trim(., side = "both") %>% na.omit(.)
+illness_groups[illness_groups == "Stress"] <- NA
+illness_groups[illness_groups == "Bipolar Disorder"] <- "Bipolar"
+# create frequency table
+illness_groups_freq <- data.frame(illness_groups) %>% count(illness_groups) %>% data.frame() %>% arrange(-n) %>% drop_na(illness_groups) 
+```
+
+
+## Descriptive information 
+
+One patent may include multiple mental disorders, prediction models, treatment recommendations, and data sources. Most of the patents focused on predictions relating to multiple mental disorders or mental illness in general (i.e., "`r stringr::str_to_title(illness_groups_freq[1,1])`", *n* = `r illness_groups_freq[1,2]`, `r 100*round(illness_groups_freq[1,2]/sum(illness_groups_freq$n),4)`%). The label “Unspecific” was assigned if a) more than four disorders according to established psychometric criteria or b) "mental disorders" or "psychiatric disorders" were addressed along with one or more example diagnoses. For example, @wall16 describe a computer implemented method to diagnose mental disorders, "such as autism". This group was followed by patents focusing on `r stringr::str_to_title(illness_groups_freq[2,1])` (*n* = `r illness_groups_freq[2,2]`, `r 100*round(illness_groups_freq[2,2]/sum(illness_groups_freq$n),4)`%), `r stringr::str_to_title(illness_groups_freq[3,1])` (*n* = `r illness_groups_freq[3,2]`, `r 100*round(illness_groups_freq[3,2]/sum(illness_groups_freq$n),4)`%), `r illness_groups_freq[4,1]` (*n* = `r illness_groups_freq[4,2]`, `r 100*round(illness_groups_freq[4,2]/sum(illness_groups_freq$n),4)`%), `r illness_groups_freq[5,1]` (*n* = `r illness_groups_freq[5,2]`, `r 100*round(illness_groups_freq[5,2]/sum(illness_groups_freq$n),4)`%), `r illness_groups_freq[6,1]` (*n* = `r illness_groups_freq[6,2]`, `r 100*round(illness_groups_freq[6,2]/sum(illness_groups_freq$n),4)`%), `r stringr::str_to_sentence(illness_groups_freq[7,1])` (*n* = `r illness_groups_freq[7,2]`, `r 100*round(illness_groups_freq[7,2]/sum(illness_groups_freq$n),4)`%), `r illness_groups_freq[8,1]` (*n* = `r illness_groups_freq[8,2]`, `r 100*round(illness_groups_freq[8,2]/sum(illness_groups_freq$n),4)`%), and `r stringr::str_to_sentence(illness_groups_freq[9,1])` (*n* = `r illness_groups_freq[9,2]`, `r 100*round(illness_groups_freq[9,2]/sum(illness_groups_freq$n),4)`%). Other mental disorders were addressed in *n* = `r sum(illness_groups_freq[10:15, 2])` patents (`r 100*round(sum(illness_groups_freq[10:15, 2])/sum(illness_groups_freq$n),4)`%). 
+
+
+```{r}
+illness_groups_freq <- illness_groups_freq %>% 
+  mutate(illness_groups = ifelse(n < 10, "Other", illness_groups)) %>% 
+  aggregate(. ~ illness_groups, data=., FUN=sum) %>%
+  arrange(desc(n)) 
+
+illness_groups_freq <- rbind(illness_groups_freq[illness_groups_freq$illness_groups != "Other",], illness_groups_freq[illness_groups_freq$illness_groups == "Other",])
+illness_groups_freq$illness_groups <- factor(illness_groups_freq$illness_groups, levels = illness_groups_freq$illness_groups)
+```
+
+```{r}
+selected_disorders <- illness_groups_freq$illness_groups
+library(reshape2)
+mdt <- data %>%  select(matches("Publication Number|Illness group|psychiatry domain")) 
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Precision psychiatry domain")), "value", ", ", "long") %>%select(-variable) %>% rename(Disorder = value) 
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Disorder")), "value", ",", "long") %>%select(-variable) %>% rename("Precision psychiatry domain" = value) %>% select(-`Publication Number`) %>% subset(., !is.na(`Precision psychiatry domain`)) %>%
+  mutate(`Precision psychiatry domain` = str_trim(`Precision psychiatry domain`))
+
+mdt$Disorder <- ifelse(!(mdt$Disorder %in% selected_disorders), "Other", mdt$Disorder)
+#mdt <- mdt[mdt$Disorder %in% selected_disorders, ]
+
+mdt_freq <- data.frame(mdt) %>% count(Precision.psychiatry.domain) %>% data.frame() %>% arrange(-n) %>% drop_na(Precision.psychiatry.domain)
+```
+
+```{r}
+mdt_1 <- data %>%  select(matches("Publication Number|Illness group|psychiatry domain")) 
+
+pred_diag <- nrow(dplyr::filter(mdt_1, grepl("^Diagnostic, Predictive|^Predictive, Diagnostic",`Precision psychiatry domain`)))
+
+pred <- nrow(dplyr::filter(mdt, grepl(".*Predictive.*",`Precision psychiatry domain`)))
+
+per_pred_diag <- format(round(pred_diag / (pred) * 100, 2), nsmall = 2)
+```
+
+
+```{r}
+# brewer pal 
+library(RColorBrewer)
+mypalette<-brewer.pal(10,"Paired")
+
+mdt$Disorder <- factor(mdt$Disorder, levels = c("Unspecific", "Depression", "Autism", "Anxiety", "PTSD", "Sleep Disorder", "Addiction", "Schizophrenia", "ADHD",  "Other"))
+
+mdt$`Precision psychiatry domain` <- gsub("Predictive", "Treatment\nprediction", mdt$`Precision psychiatry domain`)
+
+mdt$`Precision psychiatry domain` <- factor(mdt$`Precision psychiatry domain`, levels = c("Diagnostic", "Treatment\nprediction", "Prognostic"))
+```
+
+As shown in @fig-descriptives-pred, most patents (*n* = `r mdt_freq[1,2]`, `r 100*round(sum(mdt_freq[1,2])/sum(mdt_freq$n),4)`%) focused on diagnosing multiple or one out of multiple mental disorders (i.e., "Unspecific"). Diagnostic modeling refers to the prediction of a certain psychiatric disorder, the determination of disorder severity, or the differentiation between two related disorders using patient information [@lin_etal20e]. For example, @liu_etal22t describe a system for identifying disorder features shared across multiple mental disorders. About one-third of the patents involved treatment prediction modeling (*n* = `r mdt_freq[2,2]`, `r 100*round(sum(mdt_freq[2,2])/sum(mdt_freq$n),4)`%). Treatment prediction approaches focus on forecasting responses to psychiatric treatments, selecting effective treatment approaches, or adjusting ongoing treatment [@lin_etal20e]. For example, @siekmeier_etal22a describe a method that uses electroencephalogram (EEG) data to predict the response to a glutamate receptor agonist. Treatment prediction tools were often combined with the assessment of diagnostic information. That is, patients are often assigned diagnostic labels before predictions regarding the response to a specific treatment are made. In only *n* = `r mdt_freq[3,2]` (`r 100*round(sum(mdt_freq[3,2])/sum(mdt_freq$n),4)`%) patents prognostic modeling was applied. Prognostic modeling refers to the prediction of future clinical outcomes without treatment intervention [@lin_etal20e]. For example, the tool described in @lyoo_etal21 predicts the probability of future problematic behavior associated with PTSD. 
+
+```{r}
+#| include: false
+#| label: fig-pred-illness 
+#| fig-cap: Prediction types by mental disease
+
+library(CGPfunctions)
+
+# plot frequency table
+prediction_plot <- PlotXTabs2(
+  mdt,
+  results.subtitle = FALSE,
+  y = Disorder,
+  x = `Precision psychiatry domain`,
+  xlab = "",
+  ylab = NULL,
+  label.fill.alpha = .3,
+  label.text.size = 5.0,
+  legend.title = "Mental disorder",
+  title = "",
+  palette = "Set3",
+  sample.size.label = T,
+  direction = 1
+) + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))  +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(legend.title=element_blank()) + 
+  theme(plot.title = element_text(size=16))  +
+  theme(text=element_text(size=16)) +
+  theme(legend.position="right")
+```
+
+
+```{r}
+#| include: true
+#| label: fig-descriptives-pred
+#| fig-cap: Distribution of prediction models by mental disorders.  
+
+prediction_plot
+```
+
+
+```{r}
+# create precision treatment groups strings
+intervention_groups <- unlist(strsplit(data$`Intervention type`, ",")) %>% str_trim(., side = "both") %>%  tolower(.) %>% na.omit(.)
+```
+
+
+```{r}
+# create frequency table
+intervention_groups_freq <- data.frame(intervention_groups) %>% count(intervention_groups) %>% data.frame() %>% arrange(-n)
+```
+
+
+```{r}
+library(reshape2)
+mdt <- data %>%  select(matches("Publication Number|Illness group|Intervention type")) 
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Intervention type")), "value", ", ", "long") %>%select(-variable) %>% rename("Disorder" = value)
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Disorder")), "value", ",", "long") %>% select(-variable) %>% rename("Intervention" = value) %>% select(-`Publication Number`) %>% subset(., !is.na(Intervention)) %>%
+  mutate(Intervention= str_trim(Intervention))
+
+mdt<-subset(mdt, Intervention != "Other")
+
+mdt$Disorder <- ifelse(!(mdt$Disorder %in% selected_disorders), "Other", mdt$Disorder)
+#mdt <- mdt[mdt$Disorder %in% selected_disorders, ]
+
+mdt_freq <- data.frame(mdt) %>% count(Intervention) %>% data.frame() %>% arrange(-n) %>% drop_na(Intervention)
+
+```
+
+```{r}
+mdt$Intervention <- gsub("Self-help", "Digital therapy", mdt$Intervention)
+                          
+mdt$Intervention <- mgsub(mdt$Intervention, c("Pharmacotherapy", "Digital therapy", "Electrotherapy"), c("Pharmaco-\ntherapy", "Digital\ntherapy", "Electro-\ntherapy"))
+
+mdt$Intervention <- factor(mdt$Intervention, levels = c("Digital\ntherapy", "Pharmaco-\ntherapy",  "Electro-\ntherapy"))
+
+mdt$Disorder <- factor(mdt$Disorder, levels = c("Unspecific", "Depression", "Autism", "Anxiety", "PTSD", "Sleep Disorder", "Addiction", "Schizophrenia", "ADHD",  "Other"))
+```
+
+Treatment recommendations (referring to the selection or adjustment of treatment approaches) were provided in *n* = `r sum(!is.na(data$"Intervention type"))` (`r round(mean(!is.na(data$"Intervention type"))*100,2)`%) patents. 
+As can be seen in @fig-descriptives-treat, most recommended treatment approaches refer to digital therapy (*n* = `r mdt_freq[1,2]`, `r 100*round(sum(mdt_freq[1,2])/sum(mdt_freq$n),4)`%). For example, @kulkarni_krenn21 describe a method of using patient data to derive an optimal digital therapeutics treatment plan. The second largest group refers to pharmacotherapy treatments (*n* = `r mdt_freq[2,2]`, `r 100*round(sum(mdt_freq[2,2])/sum(mdt_freq$n),4)`%). For example, @kang_etal20 describe an antidepressant recommendation system based on patient information. Finally, electrotherapy recommendations (e.g., the adjustment of neuromodulation therapy) were provided in *n* = `r mdt_freq[3,2]` (`r 100*round(sum(mdt_freq[3,2])/sum(mdt_freq$n),4)`%) patents. It becomes evident from the Figure that digital therapy was most often used to treat general mental health problems, compared to pharmacotherapy, which was often used for treating specific mental disorders, such as depression and autism. 
+
+
+```{r}
+#| include: false
+#| label: fig-feed-illness 
+#| fig-cap: Treatments by mental diease
+
+treatment_type_plot <- PlotXTabs2(
+  mdt,
+  results.subtitle = FALSE,
+  y = Disorder,
+  x = Intervention,
+  xlab = "",
+  ylab = NULL,
+  label.fill.alpha = .3,
+  label.text.size = 5.0,
+  legend.title = "Mental disorder",
+  title = "",
+  palette = "Set3",
+  direction = 1
+) + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))  +
+   theme(plot.title = element_text(hjust = 0.5)) + theme(legend.title=element_blank()) + 
+  theme(plot.title = element_text(size=16))  +
+  theme(text=element_text(size=16)) +
+    theme(legend.position="right")
+
+```
+
+```{r}
+#| include: true
+#| label: fig-descriptives-treat
+#| fig-cap: Distribution of treatment approaches addressed in the patents by mental disorders.
+
+treatment_type_plot
+```
+
+```{r}
+# create data type groups
+data_types <- unlist(strsplit(data$Data, ",")) %>% str_trim(., side = "both") %>%  tolower(.) %>% na.omit(.)
+
+# create frequency table
+data_types_freq <- data.frame(data_types) %>% count(data_types) %>% data.frame() %>% arrange(-n)
+```
+
+
+```{r}
+library(reshape2)
+mdt <- data %>%  select(matches("Publication Number|Illness group|Data")) 
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Data")), "value", ", ", "long") %>%select(-variable) %>% rename("Disorder" = value)
+mdt <- cSplit(melt(mdt, id.vars=c("Publication Number", "Disorder")), "value", ",", "long") %>% select(-variable) %>% rename("Data" = value) %>% select(-`Publication Number`) %>% subset(., !is.na(Data)) %>%
+  mutate(Data= str_trim(Data))
+
+mdt<-subset(mdt, Data != "Other")
+
+mdt$Disorder <- ifelse(!(mdt$Disorder %in% selected_disorders), "Other", mdt$Disorder)
+#mdt <- mdt[mdt$Disorder %in% selected_disorders, ]
+
+mdt_freq <- data.frame(mdt) %>% count(Data) %>% data.frame() %>% arrange(-n) %>% drop_na(Data)
+
+```
+
+```{r}
+mdt$Data <- mgsub(mdt$Data, c('Neuroimaging', "Clinical records", "Sociodemographic"), c('Neuro-\nimaging', "Clinical \nrecords", "Socio-\ndemo-\ngraphic"))
+
+mdt$Data <- factor(mdt$Data, levels = c("Behavioral", "Biological", "Neuro-\nimaging", "Experience", "Clinical \nrecords", "Socio-\ndemo-\ngraphic"))
+
+mdt$Disorder <- factor(mdt$Disorder, levels = c("Unspecific", "Depression", "Autism", "Anxiety", "PTSD", "Sleep Disorder", "Addiction", "Schizophrenia", "ADHD",  "Other"))
+```
+
+
+The distribution of data sources used across mental disorders is depicted in @fig-descriptives-data. Most patents (*n* = `r mdt_freq[1,2]`, `r 100*round(sum(mdt_freq[1,2])/sum(mdt_freq$n),4)`%) used behavioral data (e.g., video or audio recordings, data collected with smart devices), followed by biological (*n* = `r mdt_freq[2,2]`, `r 100*round(sum(mdt_freq[2,2])/sum(mdt_freq$n),4)`%; e.g., blood samples, heart rate), experience-based (*n* = `r mdt_freq[3,2]`, `r 100*round(sum(mdt_freq[3,2])/sum(mdt_freq$n),4)`%; e.g., questionnaires), neuroimaging (*n* = `r mdt_freq[4,2]`, `r 100*round(sum(mdt_freq[4,2])/sum(mdt_freq$n),4)`%; e.g., electroencephalogram (EEG) or magnetic resonance imaging (MRI)), clinical records (*n* = `r mdt_freq[5,2]`, `r 100*round(sum(mdt_freq[5,2])/sum(mdt_freq$n),4)`%; e.g., electronic health records), and sociodemographic data (*n* = `r mdt_freq[6,2]`, `r 100*round(sum(mdt_freq[6,2])/sum(mdt_freq$n),4)`%). Although all data sources were used for making predictions regarding multiple disorders, we observe some characteristics, such as the use of biological data and clinical records in patents addressing schizophrenia and the use of neuroimaging and sociodemographic data in patents focused on ADHD. 
+
+
+```{r}
+#| include: false
+#| label: fig-data-illness 
+#| fig-cap: Data types by mental diease
+
+data_plot <- PlotXTabs2(
+  mdt,
+  results.subtitle = FALSE,
+  y = Disorder,
+  x = Data,
+  direction = 1,
+  xlab = "",
+  ylab = NULL,
+  label.fill.alpha = .3,
+  label.text.size = 4.0,
+  legend.title = "Mental disorder",
+  legend.position = "right",
+  title = "",
+  palette = "Set3"
+) + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))  +
+   theme(plot.title = element_text(hjust = 0.5)) + theme(legend.title=element_blank()) + 
+  theme(plot.title = element_text(size=16))  +
+  theme(text=element_text(size=16)) +
+    theme(legend.position="right")
+
+```
+
+
+```{r}
+#| include: true
+#| label: fig-descriptives-data
+#| fig-cap: Distribution of data sources used to make predictions by mental disorders.  
+
+data_plot
+```
+
+
+```{r}
+#| eval: false
+library(ggpubr)
+
+tiff("figs/1-descriptive_pred.tiff", units="in", width=6.5, height=5, res=300)
+prediction_plot
+dev.off()
+
+tiff("figs/1-descriptive_type.tiff", units="in", width=6.5, height=5, res=300)
+treatment_type_plot
+dev.off()
+
+tiff("figs/1-descriptive_data.tiff", units="in", width=8, height=5, res=300)
+data_plot
+dev.off()
+```
+
+
+```{r}
+library(maps)
+library(ggplot2)
+library(countrycode)
+data_map <- mapping_data(data)
+world_map <- ggplot2::map_data("world")
+world_map <- subset(world_map, region != "Antarctica")
+
+trend_country_freq <- data %>% count(`Assignee Country`) %>% data.frame() %>% arrange(-n)
+```
+
+The regional distribution of assignees (i.e., the organization or individual with the property right to the patent) is shown in @fig-region-map. Most patents (*n* = `r trend_country_freq[1, 2]`, `r 100*round(sum(trend_country_freq[1,2])/sum(trend_country_freq$n),4)`%) were assigned to individuals or institutions in the USA, followed by `r trend_country_freq[2, 1]` (*n* = `r trend_country_freq[2, 2]`, `r 100*round(sum(trend_country_freq[2,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[3, 1]` (*n* = `r trend_country_freq[3, 2]`, `r 100*round(sum(trend_country_freq[3,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[4, 1]` (*n* = `r trend_country_freq[4, 2]`, `r 100*round(sum(trend_country_freq[4,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[5, 1]` (*n* = `r trend_country_freq[5, 2]`, `r 100*round(sum(trend_country_freq[5,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[6, 1]` (*n* = `r trend_country_freq[6, 2]`, `r 100*round(sum(trend_country_freq[6,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[7, 1]` (*n* = `r trend_country_freq[7, 2]`, `r 100*round(sum(trend_country_freq[7,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[8, 1]` (*n* = `r trend_country_freq[8, 2]`, `r 100*round(sum(trend_country_freq[8,2])/sum(trend_country_freq$n),4)`%), `r trend_country_freq[9, 1]` (*n* = `r trend_country_freq[9, 2]`, `r 100*round(sum(trend_country_freq[9,2])/sum(trend_country_freq$n),4)`%), and `r trend_country_freq[10, 1]` (*n* = `r trend_country_freq[10, 2]`, `r 100*round(sum(trend_country_freq[10,2])/sum(trend_country_freq$n),4)`%). The regional trends are also reflected by the distribution of the most active assignees, with most patents being assigned to Blackthorn Therapeutics (*n* = 7, headquarter in San Franciso, USA) and Medtronic (*n* = 7, headquarter in Minneapolis, USA). They are followed by X Development (*n* = 6, headquarter in Mountain View, USA), IBM (*n* = 5, headquarter in Armonk, USA), Standford University (*n* = 4, Stanford, USA), the Third Military Medical University (*n* = 4, Chongqing, China), the Advanced Science and Technology Institute (*n* = 4, Yuseong-gu, South Korea), Hanyang University (*n* = 3, Seoul, South Korea), Zhejiang Technical University (*n* = 3, Hangzhou, China), and Ginger.io (*n* = 3, San Francisco, USA). 
+
+```{r}
+library(maps)
+library(ggplot2)
+library(countrycode)
+library(viridis)
+library(ggrepel)
+
+region_map <- data_map %>% 
+ggplot() +
+  geom_map(
+    dat = world_map, map = world_map, aes(map_id = region),
+    fill = "#EBECF0", color = "#7f7f7f", size = 0.25
+  ) +
+  geom_map(map = world_map, aes(map_id = `Assignee Country`, fill = ass_count_n), size = 0.25) +
+  coord_map(xlim=c(-180,180)) +
+  scale_fill_viridis_c("Number of \npublished \npatents", option = "D", direction = -1, values = c(0, 0.3, 1)) + 
+  geom_point(data=data_map, aes(x=assign_city_lon, y=assign_city_lat, size=ass_n), alpha=0.3, color = "#135350") +
+  geom_label_repel(data = data_map, 
+                   aes(x = assign_city_lon, y = assign_city_lat, 
+                       label = Assignee_corrected),
+                   direction = "both",
+                   size = 1.9, 
+                   color = "#135350",
+                   nudge_x = -0.2,
+                   nudge_y = -1.2,
+                   fill = alpha(c("white"),0.7),
+                   max.overlaps = Inf, 
+                   stat = "unique", 
+                   box.padding = 0.3,
+                   label.padding = 0.1) +
+  expand_limits(x = world_map$long, y = world_map$lat) + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank()) + 
+  theme(axis.title = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_blank()) +
+  guides(size = FALSE) +
+  theme_void() + 
+  #scale_fill_viridis_c("Number of \npublished \npatents") +
+  theme(legend.key.size = unit(0.5, 'cm'), #change legend key size
+        legend.key.height = unit(0.5, 'cm'), #change legend key height
+        legend.key.width = unit(0.5, 'cm'), #change legend key width
+        legend.title = element_text(size=7), #change legend title font size
+        legend.text = element_text(size=6)) #change legend text font size
+  #geom_text(aes(label = txt, vjust = vj), x = -Inf, y = -Inf, hjust = 0, size=3.0) 
+
+```
+
+```{r}
+#| eval: false
+tiff("figs/2-assign.tiff", units="in", width=5, height=5, res=300)
+region_map
+dev.off()
+```
+
+```{r}
+#| include: true
+#| label: fig-region-map
+#| fig-cap: Regional distribution of patent assignees. The map shows the global distribution and numbers of patent assignees as the individuals or organizations with property rights to the patents. In the case of organizational assignees, the map displays information on operational or executive headquarters. The information in the boxes contains the country code and names of the most active assignees (*n* > 2 patents). No patents have been published in countries displayed in light grey.  
+
+region_map
+```
+
+## Technology convergence based on CPC codes
+
+```{r}
+library(gtools)
+library(lubridate)
+library(scales)
+library(igraph)
+# Create color palette
+network_all <- cpc_net(year = "all", data)
+library(microViz)
+dis_pal <- distinct_palette(n = network_all$len, pal = "brewerPlus", add = NA)
+names(dis_pal) <- network_all$nodes
+dis_pal <- dis_pal[mixedsort(names(dis_pal))]
+
+# replace similar colors
+dis_pal <- gsub("#da6130", "#FFFF33", dis_pal)
+dis_pal <- gsub("#66A61E", "#D3D3D3", dis_pal)
+
+```
+
+```{r}
+cpc_dat <- cpc_trends(data)
+cpc_colors <- cpc_dat$color_codes
+cpc_df <- cpc_dat$cpc_df
+names(cpc_dat$color_codes) <- substr(names(cpc_dat$color_codes), 2, 5)
+```
+
+```{r}
+trend_plot <- cpc_df %>%
+ggplot(aes(x = year_month, y = rel_trend, group = cpc_short, color = cpc_short)) +
+  #geom_point(aes(shape = cpc_short, color = cpc_short), size = 1.5) +
+  scale_shape_manual(values = rep(15:18, len = 19)) +
+  scale_color_manual(values=cpc_dat$color_codes) +
+  labs(#title = "Monthly trend data",
+       y = "Proportion of CPC codes relative to general trend\n",
+       x = "\nPatent publication month", color = "CPC codes on the sub-class level", shape = "CPC codes on the sub-class level") +
+  theme_bw(base_size = 15) +
+  #theme(text = element_text(family = "Times New Roman")) +
+  scale_x_date(breaks=date_breaks("6 months"),
+      labels=date_format("%b %y"), limits = as.Date(c("2015-01-01", "2023-02-01")), expand = c(0, 0)) +
+  coord_cartesian(xlim = as.Date(c("2015-01-01", "2023-02-01"))) +
+  geom_rect(aes(xmin = as.Date("2022-10-20"), xmax = as.Date("2023-02-01"), ymin = -Inf, ymax = Inf), fill = "#D3D3D3",  colour = "transparent") +
+  theme(text = element_text(size=12),
+        axis.text.x = element_text(angle=90, hjust=1)) +
+  #geom_line() +
+  geom_smooth(method = "loess", se = FALSE, span = 0.4, linewidth = 0.7) +
+  geom_smooth(method = "loess", aes(x = year_month, y = overall_trend), se = F, linewidth = 1.5, inherit.aes = FALSE, color = "black") +
+  #ggplot2::annotate("text", x = as.Date("2022-11-30"),y = 20, label = "mid-October 2022", angle = 90, color = "black", size = 4.0) +
+  lims(y = c(0, 1))  +
+  theme(
+    legend.text = element_text(size=6),
+    legend.position = "bottom", 
+    legend.justification = "left",
+    legend.title = element_blank()) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  theme(axis.text=element_text(size=9),
+        axis.title=element_text(size=12))  +
+  theme(legend.position = c(0.39, 0.8742)) +
+  theme(legend.direction="horizontal") +
+  ggplot2::annotate("text", x = as.Date("2015-12-31"), y = 0.06, label = "general trend", size = 3.9)
+```
+
+```{r}
+#| eval: false
+tiff(file = "figs/3-CPCtrend.tiff", units="in", width=7, height=5, res=300)
+trend_plot
+dev.off()
+```
+
+```{r}
+# Create color palette
+network_2021 <- cpc_net(year = "2021", data)
+
+network <- network_2021$network
+vec <- network_2021$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+
+vec <- vec[mixedsort(names(vec))]
+
+
+network_2022 <- cpc_net(year = "2022", data)
+
+network <- network_2022$network
+vec2 <- network_2022$nodes
+names(vec2) <- vec2
+vec2[intersect(names(dis_pal), names(vec2))] <- dis_pal[intersect(names(dis_pal), names(vec2))]
+
+vec2 <- vec2[mixedsort(names(vec2))]
+```
+
+```{r}
+pub_2021 <- nrow(cpc_df[grepl("2021", cpc_df$year_month), ] )
+pub_2022 <- nrow(cpc_df[grepl("2022", cpc_df$year_month), ] )
+
+dec_rate <- format(round((((pub_2021 - pub_2022) / pub_2021)  * 100), 2), nsmall = 2)
+
+dec_rate_cpc <- format(round((((length(unique(vec)) - length(unique(vec2))) / length(unique(vec)))  * 100), 2), nsmall = 2)
+```
+ 
+@fig-trend-cpc shows the relative frequency of CPC codes at the subclass level between 2015 and mid-October 2022. C12Q ("Measuring or testing processes involving enzymes, nucleic acids, or microorganisms") peaked in early 2016, G01N ("Investigating or analyzing materials by determining their chemical or physical properties") was mentioned most often at the end of 2017, and G06T ("Image data processing or generation") peaked in early 2020. The number of single CPC codes decreased relative to the overall trend, indicating that the variety of codes mentioned increased over the years. 
+
+
+```{r}
+#| include: true
+#| label: fig-trend-cpc
+#| fig-cap: Development of CPC codes on the subclass level between 2015 and October 2022. The general trend (black line) shows the development of the number of patents over time, while the colored lines described the development of individual CPC subclasses relative to the number of patents published over time. CPC subclass codes mentioned in *n* > 9 months are included.
+
+trend_plot
+```
+
+
+@fig-cpc-net shows the cooccurrences of CPC subgroups belonging to distinct subclasses from 2015 to 2022. A key finding is that the overall complexity of technology combinations increased between 2015 (four cooccurrences) and 2021 (26 cooccurrences) and then decreased slightly (15 cooccurrences in 2022). Some subclasses, such as G16H (Healthcare informatics), have been consistently present and connected to multiple other subclasses across all years. In addition, each year, new technology combinations have been identified. For 2015, we see a relatively simple net of combinations between bioinformatics (G16B), preparations for pharmaceutical products (A61K), healthcare informatics (G16H), and measuring or testing processes involving enzymes, nucleic acids, or microorganisms (C12Q). For 2016, we observe two relatively separate fields. We see that diagnostic instruments (A61B) were introduced and combined with electronic and image data processing (G06F and G06T). In addition, we observe that G01N (Investigating or analyzing materials by determining their physical or chemical properties) was introduced and combined with bioinformatics (G16B) and processes involving enzymes, nucleic acids, or microorganisms (C12Q). In 2017, the technology convergence net appears less complex. New inventions focused on the integration of speech analysis (G10L) and computational modeling (G06N) with diagnostic instruments and processes (A61B). In 2018, the complexity and density of the network increases again. New developments include the introduction of wireless communication networks (H04W), data processing systems (G06Q), and systems for the transmission of digital information (H04L), which were combined with healthcare informatics (G16H) and diagnostic instruments (A61B). For 2019, we observe the formation of connected but somewhat distant fields. The first field combined healthcare informatics (G16H) with devices for introducing media into or onto the body (A61M) and electrotherapy (A61N). The second field combined image or video data recognition or understanding (G06V) with diagnostic technology (A61B). The third field combined diagnostic instruments and processes (A61B) with computational models (G06N), speech analysis (G10L), and graphical data reading (G06K). Finally, the last field consists of dense connections of technologies relating to digital data processing and communication networks (H04W, H04L, G06Q). In 2020, formerly somewhat distant fields moved towards the center, and the network appears denser compared to 2019, with a strong focus on the core technologies healthcare informatics (G16H) and diagnostic instruments and processes (A61B). In 2021, the density of the network reaches its peak. While G16H and A61B still form the center of the network, combinations with other technologies, such as devices for introducing media into or onto the body (A61M), electrotherapy (A61N), physical therapy (A61H), and the investigation of physical and chemical materials and processes (C12Q and G01N) gain relevance. The network appears less dense in 2022 compared to 2021, and most inventions concentrate on combining the two core technologies (G16H and A61B). Multiple CPC codes that were present in 2021 are missing in 2022. Because we only included data until mid-October 2022, it is not surprising that the total number of patents published in 2022 (*n* = `r pub_2022`) is below the number of patents published in 2021 (*n* = `r pub_2021`) - a decrease of `r dec_rate`%. However, the number of CPC codes mentioned in 2021 (*n* = 26) decreased by `r dec_rate_cpc`% (*n* = 15 in 2022), indicating a concentration on fewer technologies and technology combinations compared to 2021.    
+
+
+
+```{r}
+library(GGally)
+net_all <- ggnet2(network_all$network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = dis_pal,
+       min_size = 2,
+       max_size = 6, 
+       legend.size = 6.0,
+       size.legend = NULL, 
+       vjust = 0.1, 
+       edge.size=E(network_all$network)$importance*0.1,
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 1.1), layout.exp = 0.1) +
+  guides(size = FALSE) + 
+  theme(legend.title=element_blank()) + 
+  theme(legend.position="right")
+```
+
+
+```{r}
+#leg <- get_legend(net_all)
+
+# Create color palette
+network_2015 <- cpc_net(year = "2015", data)
+
+network <- network_2015$network
+vec <- network_2015$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2015 <- ggnet2(network, 
+                   weights=ws,
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold",
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) + 
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  ggtitle("a) 2015") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) +
+  theme(legend.position="none") 
+  #theme(legend.spacing.x = unit(0.1, 'cm')) 
+
+# Create color palette
+network_2016 <- cpc_net(year = "2016", data)
+
+network <- network_2016$network
+vec <- network_2016$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+
+vec <- vec[mixedsort(names(vec))]
+
+net_2016 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) +  
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom") +
+  ggtitle("b) 2016") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+
+# Create color palette
+network_2017 <- cpc_net(year = "2017", data)
+
+network <- network_2017$network
+vec <- network_2017$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2017 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) +  
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  ggtitle("c) 2017") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+# Create color palette
+network_2018 <- cpc_net(year = "2018", data)
+
+network <- network_2018$network
+vec <- network_2018$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2018 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) +  
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom") +
+  theme(legend.position="none") +
+  ggtitle("d) 2018") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+# Create color palette
+network_2019 <- cpc_net(year = "2019", data)
+
+network <- network_2019$network
+vec <- network_2019$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2019 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) + 
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  theme(legend.position="none")  +
+  ggtitle("e) 2019") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+# Create color palette
+network_2020 <- cpc_net(year = "2020", data)
+
+network <- network_2020$network
+vec <- network_2020$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2020 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) + 
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  theme(legend.position="none") +
+  ggtitle("f) 2020") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+# Create color palette
+network_2021 <- cpc_net(year = "2021", data)
+
+network <- network_2021$network
+vec <- network_2021$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+net_2021 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) +  
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  theme(legend.position="none") +
+  ggtitle("g) 2021") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+# Create color palette
+network_2022 <- cpc_net(year = "2022", data)
+
+network <- network_2022$network
+vec <- network_2022$nodes
+names(vec) <- vec
+vec[intersect(names(dis_pal), names(vec))] <- dis_pal[intersect(names(dis_pal), names(vec))]
+vec <- vec[mixedsort(names(vec))]
+
+
+net_2022 <- ggnet2(network, 
+       label = FALSE, 
+       label.size = 3.0, 
+       node.color = "Subclass", 
+       size = "degree", 
+       palette = vec,
+       min_size = 6,
+       max_size = 10,
+       #legend.size = 7.3,
+       #size.legend = NULL, 
+       vjust = 0.1, 
+       mode = "fruchtermanreingold", 
+       layout.par = list(cell.jitter = 0.01), layout.exp = 0.1) + 
+  guides(size = FALSE) + 
+  #theme(legend.title=element_blank()) + 
+  #theme(legend.position="bottom")  +
+  ggtitle("h) 2022") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5, size = 18)) 
+
+#setdiff(names(vec), names(vec2))
+#setdiff(names(vec2), names(vec))
+
+```
+
+
+
+```{r}
+#| include: true
+#| label: fig-cpc-net
+#| fig-cap: Networks of CPC subgroup codes between 2015 and October 2022. The networks represent the co-occurrences of CPC subgroups belonging to distinct subclasses. The size of the nodes (filled circles) signifies the number of times a subgroup has been observed; the closer two nodes are to one another, the more frequently their respective subgroups have been mentioned together.
+
+library(ggpubr)
+ggarrange(net_2015, net_2016, net_2017, net_2018,
+          net_2019, net_2020, net_2021, net_2022,
+          ncol=2, nrow=4, common.legend = F, legend = "none")
+
+```
+
+```{r}
+#| eval: false
+library(ggpubr)
+
+tiff(file = "figs/4-cpcnet_all.tiff", units="in", width=8, height=5, res=300)
+net_all
+dev.off()
+
+
+tiff(file = "figs/4-cpcnet_1a.tiff", units="in", width=8, height=5, res=300)
+net_2015
+dev.off()
+
+tiff(file = "figs/4-cpcnet_1b.tiff", units="in", width=8, height=5, res=300)
+net_2016
+dev.off()
+
+
+tiff(file = "figs/4-cpcnet_2.tiff", units="in", width=8, height=5, res=300)
+net_2017
+dev.off()
+
+tiff(file = "figs/4-cpcnet_3.tiff", units="in", width=8, height=5, res=300)
+net_2018
+dev.off()
+
+tiff(file = "figs/4-cpcnet_4.tiff", units="in", width=8, height=5, res=300)
+net_2019
+dev.off()
+
+tiff(file = "figs/4-cpcnet_5.tiff", units="in", width=8, height=5, res=300)
+net_2020
+dev.off()
+
+tiff(file = "figs/4-cpcnet_6.tiff", units="in", width=8, height=5, res=300)
+net_2021
+dev.off()
+
+tiff(file = "figs/4-cpcnet_7.tiff", units="in", width=8, height=5, res=300)
+net_2022
+dev.off()
+```
+
+## Topic modeling based on claims 
+
+```{r}
+# Data Wrangling and Visualization
+library(glue)
+library(cowplot)
+library(widyr)
+# Date & Time Manipulation.
+library(hms)
+library(lubridate) 
+# Text Mining
+library(tidytext)
+library(tm)
+library(wordcloud)
+# Network Analysis
+library(igraph)
+# Network Visualization (D3.js)
+library(networkD3)
+library(data.table)
+library(tidyverse)
+```
+
+
+```{r}
+library(stm)
+data <- data %>% drop_na(`Claims (English)`)
+data <- data %>%
+  dplyr::mutate("Publication Date" = as.Date(data$`Publication Date`, format = "%Y-%m-%d"))
+data$Pub_year <- format(data$`Publication Date`, format = "%Y")
+
+meta_data <- data.frame(cbind(data$`Assignee Country`, data$`Combined Patent Impact`, data$Pub_year, data$`Dead/Alive`))
+meta_data[is.na(meta_data)] <- 0
+meta_data$X1 <- as.factor(meta_data$X1)
+meta_data$X4 <- as.factor(meta_data$X4)
+
+meta_data$X2 <- as.numeric(meta_data$X2)
+meta_data$X3 <- as.numeric(meta_data$X3)
+
+processed <- textProcessor(data$`Claims (English)`, metadata = meta_data,
+                           lowercase = TRUE, removestopwords = TRUE,
+                           removenumbers = TRUE, removepunctuation = TRUE,
+                           ucp = FALSE, stem = FALSE, wordLengths = c(3, Inf),
+                           sparselevel = 1, language = "en", verbose = TRUE,
+                           onlycharacter = FALSE, striphtml = FALSE,
+                           customstopwords = c("wherein", "according", "one",
+                                               "comprising", "claim", "first",
+                                               "second", "least", "andor", 
+                                               "greater", "will", "left"), 
+                           custompunctuation = NULL, v1 = FALSE)
+
+out <- prepDocuments(processed$documents, processed$vocab, processed$meta)
+docs <- out$documents
+vocab <- out$vocab
+meta <- out$meta
+```
+
+```{r}
+#| eval: false
+meta[is.na(meta)] <- 0
+storage <- searchK(out$documents, out$vocab, K = seq(2, 30, 1), prevalence =~ X1 + X2 + X3 + X4, data = meta)
+```
+
+
+```{r}
+#| eval: false
+pdf(file = "figs/storage.pdf")
+plot(storage)
+dev.off()
+```
+
+
+```{r}
+#| eval: false
+
+Kseq<- seq(10, 20, 1)
+
+poliblogSelect14 <- lapply(Kseq, function(k)
+  selectModel(out$documents, out$vocab, K = k,
+                              prevalence =~ X1 + X2 + X3 + X4,
+                              data = out$meta, runs = 20, seed = 45))
+
+plotseq_6 <- c(1:6)
+plotseq_11 <- c(7:11)
+```
+
+
+```{r}
+#| eval: false
+
+pdf("figs/exc_coh_6.pdf")
+par( mfrow= c(3,2) )
+plots <- function(p) {
+  plotModels(poliblogSelect14[[p]], xlab = paste("Model", p+9, "\nSemantic Coherence")) 
+  }
+
+sapply(plotseq_6, plots, simplify = FALSE,USE.NAMES = TRUE)
+par(1,1)
+dev.off()
+
+pdf("figs/exc_coh_11.pdf")
+par( mfrow= c(3,2) )
+plots <- function(p) {
+  plotModels(poliblogSelect14[[p]], xlab = paste("Model", p+9, "\nSemantic Coherence")) 
+  }
+
+sapply(plotseq_11, plots, simplify = FALSE,USE.NAMES = TRUE)
+par(1,1)
+dev.off()
+```
+
+We empirically evaluated topic numbers to select a range of viable models using metrics such as held-out likelihood, residual spread, semantic coherence, and lower bound on the marginal likelihood (Fig. B in the Online Appendix). We then chose topic models with ten to 20 topics to analyze the semantic coherence vs. exclusivity trade-offs and the interpretability of the topics (Fig. C in the Online Appendix). We settled on the eleven-topic solution based on our evaluation of these metrics and topic interpretability. We then inspected each topic's top words, abstracts, and claims to generate the topic descriptions. 
+
+The topics described in Table 2 highlight the various issues addressed in the patents. Most topics describe how certain data sources (e.g., "EEG biomarker data") may be used in ML models (e.g., "neural networks") to generate specific diagnostic, treatment prediction, or prognostic recommendations or outcomes (e.g., "deriving treatment recommendations"). Most topics mention mental health issues in general. However, some topics address specific mental disorders, such as Topic 4, which concentrates on the identification of biomarkers for depression, Topic 6, which describes features relevant to ADHD diagnosis from neurological and behavioral data, Topic 10, which is focused on generating insight into sleep-related problems, and Topic 11, which describes methods for preempting addiction-related behaviors. Similarly, some specific data sources, such as (EEG) biomarker data (Topics 1 and 4), genetic data (Topic 3), behavioral data (Topic 5), neurological data (Topics 6 and 7), acoustic data (Topic 8), mobile phone data (Topic 10), and sensor data (Topic 11). Finally, some topics mention specific ML techniques used to derive predictions, such as (convolutional) neural networks (Topics 1 and 4) and data feature identification and processing (Topics 3 and 6).
+
+```{r}
+poliblogPrevFit <- stm(documents = out$documents, vocab = out$vocab, 
+                       K = 11, prevalence =~ X1 + X2 + X3 + X4, data = out$meta, seed = 55, init.type = "Spectral")
+```
+
+```{r}
+labelTopics(poliblogPrevFit, n = 7)
+```
+
+```{r}
+#findThoughts(poliblogPrevFit, texts = data$`Abstract - DWPI`, n = 5, topics = 8)$docs[[1]]
+```
+
+```{r}
+plot(poliblogPrevFit, type = "summary", xlim = c(0, .3))
+```
+
+
+@fig-topic_plot shows the topic probabilities over the period of 2015 to mid-October 2022. Results of the regression analysis with the *estimateEffect* function showed that Topic 3 ("Generating features from genetic data") exhibited a negative trend (*B* = -0.045, *SE* = 0.010, *t* = -4.663, *p* < .001). Furthermore, Topic 3 was negatively (*B* = -0.003, *SE* = 0.001, *t* = -2.303, *p* = .022) and Topic 6 ("Identifying features relevant for ADHD diagnosis from neurological and behavioral data") was positively (*B* = 0.004, *SE* = 0.002, *t* = 2.278, *p* = .024) related to combined patent impact. 
+
+
+```{r}
+ap_documents <- tidy(poliblogPrevFit, matrix = "gamma")
+ap_documents
+
+topics <- ap_documents %>%
+  pivot_wider(names_from = topic, values_from = gamma, names_prefix = "Topic ")
+
+data <- data %>%
+  dplyr::mutate("Publication Date" = as.Date(data$`Publication Date`, format = "%Y-%m-%d"))
+
+library(lubridate)
+library(scales)
+data$year_month <- floor_date(data$`Publication Date`,  # Create year-month column
+                                   "month")
+
+data_topics <- cbind(data, topics)
+
+df <- data_topics %>%
+  select(matches("year_month|Topic")) %>%
+  gather(key = "variable", value = "value", -year_month) %>% 
+  group_by(year_month, variable) %>% 
+  summarise(mean_value = mean(value)) 
+
+
+df$variable <- factor(df$variable,                 # Relevel group factor
+                         levels = c("Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5", 
+                                    "Topic 6", "Topic 7", "Topic 8", "Topic 9", "Topic 10",
+                                    "Topic 11"))
+```
+
+```{r}
+colourCount = length(unique(df$variable))
+getPalette = colorRampPalette(brewer.pal(9, "Set2"))
+```
+
+```{r}
+library(ggrepel)
+library(gghighlight)
+
+topic_plot <- df %>%
+ggplot(aes(x = year_month, y = mean_value, group = variable, color = variable)) +
+  #geom_point(aes(shape = variable, color = variable), size = 1.5) +
+  scale_shape_manual(values = rep(15:17, len = 15)) +
+  scale_color_manual(values=getPalette(colourCount)) +
+  labs(#title = "Monthly trend data",
+       y = "Topic probability\n",
+       x = "\nPatent publication month", color = "Topics", shape = "Topics") +
+  theme_bw(base_size = 15) +
+  #theme(text = element_text(family = "Times New Roman")) +
+  scale_x_date(breaks=date_breaks("6 months"),
+      labels=date_format("%b %y"), limits = as.Date(c("2015-01-01", "2023-02-01")), expand = c(0, 0)) +
+  coord_cartesian(xlim = as.Date(c("2015-01-01", "2023-02-01"))) +
+  geom_rect(aes(xmin = as.Date("2022-10-20"), xmax = as.Date("2023-02-01"), ymin = -Inf, ymax = Inf), fill = "#D3D3D3",  colour = "transparent") +
+  theme(text = element_text(size=10),
+        axis.text.x = element_text(angle=90, hjust=1)) +
+  geom_smooth(method = "loess", se = FALSE, linewidth = 0.6, span = 0.3) +
+  #ggplot2::annotate("text", x = as.Date("2022-11-30"),
+             #y = 0.3, label = "mid-October 2022", angle = 90, color = "black", size = 4.0) +
+  #geom_text_repel(aes(label = variable), max.overlaps = 4, size = 2) +
+  theme(
+    legend.text = element_text(size=9),
+    legend.position = "bottom", 
+    legend.justification = "left",
+    legend.title = element_blank()) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  coord_cartesian(ylim = c(0, 0.75)) +
+  theme(legend.position = c(0.4, 0.85)) +
+  theme(legend.direction="horizontal")
+```
+
+```{r}
+#| include: true
+#| label: fig-topic_plot 
+#| fig-cap: Topic probabilities trends between 2015 and October 2022. Topic probabilities represent the probabilities that documents in that year are generated from each topic.
+
+topic_plot
+```
+
+```{r}
+#| eval: false
+tiff(file = "figs/5_topic_trends.tiff", units="in", width=7, height=5, res=300)
+topic_plot
+dev.off()
+```
+
+```{r}
+out$meta[is.na(out$meta)] <- 0
+set.seed(3)
+prep <- estimateEffect(1:11 ~ X1 + X2 + X3 + X4, poliblogPrevFit, meta = out$meta, uncertainty = "Global")
+summary(prep)
+```
+
+
+```{r}
+#| include: false
+#| label: fig-impact 
+#| fig-cap: The relationship of Topics 2 and 6 with combined patent impact
+
+plot(prep, "X2", method = "continuous", topics = c(2, 6), model = poliblogPrevFit,  printlegend = TRUE, xlab = "Combined Patent Impact")
+
+```
+
+
+```{r}
+#| eval: false
+pdf(file = "figs/8-impact.pdf")
+
+plot(prep, "X2", method = "continuous", topics = c(2, 6), model = poliblogPrevFit,  printlegend = TRUE, xlab = "Combined Patent Impact")
+
+dev.off()
+```
+
+
+
+## Characteristics of the most impactful patent per year
+
+2015: @muller-myhsok_etal15 present a tool for predicting treatment responses to antidepressant treatments with corticotropin-releasing hormone (CRH) receptor antagonists. The tool is based on a single nucleotide polymorphism (SNP) genotyping analysis to determine CRH activity in a group of patients. An ML algorithm is developed to determine a value indicative of CRH overactivity. Other patents have been cited in the field of predicting treatment responses in patients with mental disorders, such as a "Method for predicting a treatment response to a CRHR1 antagonist and/or a V1B antagonist in a patient with depressive and/or anxiety symptoms" [@holsboer_muller-myhsok20a].     
+
+
+2016: @dilorenzo16a describe a method to deliver a neuromodulation therapy, such as intracranial electrical stimulation, to treat psychiatric disorders. The method adjusts the therapy parameters relative to the prior therapy and patient responses. This product has been commercialized by the current patent assignee, Livanova, and is used to treat depression, among other conditions ([livanova.com](https://www.livanova.com/depression/en-us)). Citing patents include @perez_etal19c, which discusses transcutaneous electrical stimulation for various applications, and US11273283B2, which describes tools that decode neural correlates of desired emotional states or sleep states for use in neurostimulation therapy. 
+
+2017: @karam_etal17 refers to a tool for the monitoring of bipolar disorder using speech analysis. It records speech data from communication devices such as mobile phones and then extracts features from the data. These features are then used in a decision module to classify mental health conditions, such as bipolar disorder. Several commercial applications based on speech-based mood monitoring have been released in the recent years, for example, by SondeHealth ([sondehealth.com](https://www.sondehealth.com/)) and Kintsugi [kintsugihealth.com](https://www.kintsugihealth.com/product)). Kintsugi Voice can be used in patient monitoring apps to detect signs of depression and anxiety from speech data. 
+
+
+2018: @moturu_madan18a describe a method of using mobile phone data to generate a medical status profile and treatment recommendations (medication type and dosage). The collected information is then transmitted to a care provider, who can adjust the medical status and treatment recommendation based on input information. The current assignee, Ginger ([ginger.com](https://www.ginger.com/)), provides telemedicine services, such as behavioral health coaching, psychiatry, and self-care solutions. Other AI-enabled advisory systems that generate health consultation recommendations and trigger alerts based on input data have been mentioned in related patents, such as @neumann20a.
+
+
+2019: @williams19a describe a technique that uses wireless location, context, and/or communication network data to preempt behavior associated with addiction. The technique collects both behavioral and environmental data, such as user location, from a mobile device and estimates the risk of relapse associated with that location. If the risk of relapse is high, the user is then notified and requested to engage in preemptive behavior, such as attending an addiction support meeting. This patented technique has been commercialized by companies such as Behaivior ([behaivior.com](https://www.behaivior.com/about)), which uses wearable device data and AI-enabled predictions to determine risks for addiction-related behavior.
+ 
+2020: @chekroud_etal20a provide a predictive framework for depression treatment outcomes, based on questionnaire data. The current assignee, SpringHealth ([springhealth.com](https://springhealth.com/)), offers digital cognitive-behavioral therapy and other related treatments. Several other patents related to this technology, such as @mason21a and @mason_etal22a, discuss methods of optimizing telemedical treatment, or introducing remote examinations with augmented reality, respectively. 
+
+2021: @komogortsev21a describe a health assessment technique that evaluates mental health conditions (e.g., autism, depression) by analyzing the behavior of the human visual system. This technique is employed by iMotions in their biosensor-based diagnostics ([imotions.com](https://imotions.com/applications/healthcare/)). Other patents that reference this technique are related to tracking eye movement for optimizing extended reality environment interactions [e.g., @saito22a]. 
+
+2022: Finally, @vayrynen_kortelainen22 describe a method for using electroencephalography (EEG) signals to predict the occurrence of mental health conditions. The method involves comparing the phase-to-phase, phase-to-amplitude, and amplitude-to-phase coupling of the EEG signal of a patient to that of a "normal" brain. This comparison can be used to predict the occurrence of mental health conditions, such as schizophrenia or depressive disorder.
+
+```{r}
+df_highimp <- data %>%
+  select(matches("Pub_year|Impact|Publication Number|Title$|Abstract - DWPI")) %>%
+  gather(key = "variable", value = "value", -c(Pub_year, `Publication Number`, Title, `Abstract - DWPI`)) %>% 
+  mutate(value = as.numeric(value)) %>% 
+  group_by(Pub_year) %>% 
+  filter(value == max(value, na.rm = T)) %>% 
+  mutate(Title = str_to_sentence(Title)) %>% 
+  mutate(Pub_year = as.numeric(Pub_year)) %>% 
+  arrange(., Pub_year)
+
+df_highimp$Title <- sub("crhr1", "CRHR1", df_highimp$Title)
+df_highimp$Pub_Title <- paste("(",df_highimp$`Publication Number`,") ", df_highimp$Title, sep = "")
+df_highimp$Pub_Title <- gsub('(.{1,19})(\\s|$)', '\\1\n', df_highimp$Pub_Title)
+
+df_highimp$Pub_Title2 <- c(df_highimp$Pub_Title[1], rep(NA, 6),  df_highimp$Pub_Title[8])
+df_highimp$Pub_Title1 <- c(NA, df_highimp$Pub_Title[2], df_highimp$Pub_Title[3], df_highimp$Pub_Title[4], df_highimp$Pub_Title[5], df_highimp$Pub_Title[6], df_highimp$Pub_Title[7], NA)
+
+df_highimp$`Abstract - DWPI`
+```
+
+```{r}
+ggplot(data=df_highimp, aes(x=Pub_year, y=value)) +
+  geom_bar(stat="identity") +
+  geom_text(aes(label = Pub_Title1), position = "identity", vjust=1.5, size=1.7, color = "white") +
+  geom_text(aes(label = Pub_Title2), position = "identity", vjust=0.00, size=1.7, color = "black") 
+
+```
+
+
+# Discussion
+
+As the field of precision psychiatry advances rapidly, and a growing number of AI-enabled tools become available, it is critical to comprehend central areas of innovation to ensure the successful integration of these tools into practice and support their continual progress. The current patent review summarizes the content and scope of patents on AI-enabled precision psychiatry applications using diagnostic, treatment prediction, and prognostic modeling approaches. Results show that the majority of tools focus on diagnostic modeling. Most applications make predictions regarding multiple mental disorders, followed by depression and autism. This trend aligns with transdiagnostic approaches in psychiatry, which focus on cutting across conventional disorder categories defined in DSM/ICD manuals [e.g., @rosenfeld_etal19]. About one-third of the tools provided treatment-related recommendations, focusing on recommending and administering effective digital therapy and pharmacotherapy. Behavioral data was the most commonly used data source, followed by biological data, neuroimaging data, experience-based data, clinical records, and sociodemographic data. The USA held the majority of patent publications, followed by China, South Korea, India, and Japan. The review provides insight into the emerging field of AI-enabled precision psychiatry, which may inform the adoption of these tools into clinical practice.  
+
+An analysis of network plots of CPC subclass combinations revealed that the rate of technology convergence increased significantly between 2015 and 2021. The results of CPC-based technology convergence may be interpreted in light of the technology life cycle [@haupt_etal07]. During the introduction phase (2015 to 2016), a low level of technological diffusion and intensity is exhibited. The pace of technological advances increases during the subsequent growth phase, characterized by a general rise in CPC codes and code cooccurrences (after 2016). Although the number of CPC codes and cooccurrences decreases from 2021 to 2022, it remains unclear whether this decline can be attributed to external relatively temporary influencing factors (e.g., development obstacles due to Covid-19) or represents an early sign of technology maturity [@probst_etal21; @haupt_etal07]. However, since approximately 18 months pass between issuing a patent and patent publication, the results of the network developments must be interpreted in light of the time delay between making an invention and the patent publication. This delay might also explain the prominence of CPC codes relating to physical therapy, electrotherapy, and devices involving the introduction of media into or onto the body in 2021. Accordingly, the increased popularity of remote therapeutics observed since the beginning of the Covid-19 pandemic in early 2020 may be better reflected in patents published after 2021 [@witteveen_etal22].  
+
+The growth in the number of CPC codes and the increase in technology convergence networks observed between 2015 and 2021 may be attributed to the complexity of the technological content [@curran13; @no_park10; @caviggioli16]. That is, the development of AI-enabled precision psychiatry tools is spurred by the implementation of new methods and systems that enhance the accuracy of predictions [@lin_etal20e; @curran13]. Core technologies, namely healthcare informatics and diagnostic instruments, are positioned at the center of the networks over time. The emergence of new technologies is enabled through novel combinations of ICT and AI-enabled systems. While the increase in complexity of AI-enabled precision psychiatry tools has the potential to benefit mental health practice, it also creates challenges. Practitioners and trainers must be familiar with and trustful of the latest technologies to maximize their practical value. The results of the technology convergence analysis highlight opportunities for bringing together expertise from multiple fields to move AI-enabled precision psychiatry forward. 
+
+We employed topic modeling as an exploratory approach to investigate technological fields and combinations beyond technology convergence information based on CPC codes. Eleven topics were identified that combine multiple data streams (e.g., EEG data, behavioral data, genetic data), purposes (e.g., diagnosing or treating mental disorders), and disorders (e.g., depression and addiction). Regression analysis results revealed that patents generating features from genetic data were less likely to be enforced, and the number of documents associated with that topic diminished over time. Potential explanations for this trend include the troubles related to the high dimensionality and heterogeneity of genetic data, which necessitates collecting large datasets and using complex modeling techniques [@su_etal20]. Additionally, it has been demonstrated that neuroimaging data produces more accurate classifiers than genetic data for diagnosing various mental disorders [@abd-alrazaq_etal22; @su_etal20]. Another potential explanation may be the maturity of the technology for deriving diagnoses based on genetic data relative to more recent advances, such as the utilization of behavioral data gathered through mobile devices, which may have caused a transition to generate features for precision psychiatry using more modern and convenient data acquisition approaches [@su_etal20; @mcguffin_etal04; @bennett_etal12]. 
+
+
+In the final part of this review, we examine the characteristics and resulting developments of the most impactful patents per year since 2015. These patents cover a broad range of applications, including the prediction of responses to psychotropic drug treatment (2015), neuromodulation therapy (2016), speech-based mood monitoring (2017), recommendations based on mobile phone data (2018), preempting addictive behavior (2019), predicting depression treatment outcomes based on questionnaire data (2020), mental health assessment using eye tracking (2021), and EEG-based diagnostics (2022). The commercialization of many of these techniques speaks to their practical relevance. An analysis of citing patents demonstrates the field's continual development and potential for advancing existing technologies. Of all patents published, *n* = `r sum(trend_country_freq[2:20, 2])` (`r 100*round(sum(trend_country_freq[2:20,2])/sum(trend_country_freq$n),4)`) originated from outside the US. Interestingly, all the most impactful patents were assigned to US individuals or institutions. This could be due to the relatively high quality of US patents in the international comparison [@boeing_mueller16; @boeing_mueller19; @torrance_west17]. US data protection legislation is also less stringent than other countries, such as those in Europe [@almeida_etal22; @pesapane_etal18], which may contribute to the rapid development and commercialization of AI-enabled precision psychiatry tools that rely heavily on large amounts of sensitive data.
+
+The analysis of the scope, content, and development trends of technology using patent data is associated with some limitations. Structural differences in the propensity of individuals and organizations to publish patents lead to an under-presentation of the true extent of R&D developments when using patent data alone [@curran13; @caviggioli16]. Despite this limitation, patent data offers insight into technology advancements that cannot be gained from an analysis of research data. Future research may combine information gained from patents and research data to identify knowledge and technology development gaps in either domain, thus highlighting opportunities and challenges for researchers and patenting entities. 
+
+# Conclusion
+
+In recent years, AI-enabled precision psychiatry has developed into an increasingly complex field, with patents published between 2015 and 2022 covering a variety of applications aiming at increasing precision in diagnosing mental disorders and providing practical treatment recommendations. The review highlights potential application areas, current and future technological trends, and commercial opportunities. Mental health practitioners could use the information to understand the AI tools available to them and develop the skills necessary for guaranteeing the smooth adoption of available tools into practice.
+
+
+# References
+
+
+
+
+
+
+
+
+
+
+
